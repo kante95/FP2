@@ -1,0 +1,119 @@
+QtiPlot 0.9.8 project file
+<scripting-lang>	muParser
+<windows>	5
+<table>
+HH	30	5	19/10/17 14:47
+geometry	0	0	523	301	
+header	TimemsChannel1Channel2Channel3[X]	2[Y]	3[Y]	4[Y]	5[Y]
+ColWidth	100	100	100	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0	0	0
+HiddenColumn	0	0	0	0	0
+Comments						
+WindowLabel		2
+<data>
+0	1014	5735	7774	1	0.4
+1	1014	5644	7951	1	
+2	1014	5482	7940	1	
+3	1014	5645	7946	0	
+4	1014	5621	8081	0	
+5	1014	5662	7840	0	
+6	1014	5584	7977	0	
+7	1014	5478	7949	0	
+8	1014	5558	8002	0	
+9	1014	5465	7918	1	
+</data>
+</table>
+<table>
+VV	30	5	19/10/17 14:52
+geometry	523	0	591	275	active
+header	TimemsChannel1Channel2Channel3[X]	2[Y]	3[Y]	4[Y]	5[Y]
+ColWidth	100	100	100	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0	0	0
+HiddenColumn	0	0	0	0	0
+Comments						
+WindowLabel		2
+<data>
+0	1014	5309	8222	0	0.2
+1	1014	5302	8166	0	
+2	1014	5297	8142	0	
+3	1014	5301	8182	0	
+4	1014	5334	8341	0	
+5	1014	5290	8118	1	
+6	1014	5261	8189	0	
+7	1014	5256	8180	0	
+8	1014	5308	8189	0	
+9	1014	5407	8034	1	
+</data>
+</table>
+<table>
+HV	30	5	19/10/17 14:52
+geometry	584	294	610	266	
+header	TimemsChannel1Channel2Channel3[X]	2[Y]	3[Y]	4[Y]	5[Y]
+ColWidth	100	100	100	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0	0	0
+HiddenColumn	0	0	0	0	0
+Comments						
+WindowLabel		2
+<data>
+0	1014	5513	8135	8	5.2
+1	1014	5603	8199	6	
+2	1014	5595	8201	4	
+3	1014	5519	8083	7	
+4	1014	5453	8173	6	
+5	1014	5623	8192	5	
+6	1014	5505	8235	4	
+7	1014	5673	8247	5	
+8	1014	5529	8146	4	
+9	1014	5453	8177	3	
+</data>
+</table>
+<table>
+Table4	30	2	19/10/17 14:52
+geometry	0	301	445	220	hidden
+header	1[X]	2[Y]
+ColWidth	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel		2
+<data>
+</data>
+</table>
+<table>
+VH	30	5	19/10/17 14:54
+geometry	0	301	666	283	
+header	TimemsChannel1Channel2Channel3[X]	2[Y]	3[Y]	4[Y]	5[Y]
+ColWidth	100	100	100	148	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0	0	0
+HiddenColumn	0	0	0	0	0
+Comments						
+WindowLabel		2
+<data>
+0	1014	5200	7848	13	13
+1	1014	5354	7909	14	
+2	1014	5249	7907	17	
+3	1014	5145	7935	14	
+4	1014	5302	7914	18	
+5	1014	5286	7945	7	
+6	1014	5416	7903	12	
+7	1014	5259	7844	11	
+8	1014	5257	7876	11	
+9	1014	5228	7890	13	
+</data>
+</table>
+<open>1</open>
