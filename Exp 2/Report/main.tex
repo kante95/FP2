@@ -24,6 +24,7 @@
 \usepackage{dcolumn}% Align table columns on decimal point
 \usepackage{bm}% bold math
 \usepackage{comment}
+\usepackage{float}
 %\usepackage{hyperref}% add hypertext capabilities
 %\usepackage[mathlines]{lineno}% Enable numbering of text and display math
 %\linenumbers\relax % Commence numbering lines
@@ -101,69 +102,33 @@ The ratio between observed decays of W and Z boson is $ N_W/N_Z = 6\pm 3.5$, whe
 We analysed 100 events with the software MINERVA searching for W boson decays. In order to understand the proton structure we needed to distinguish between $\text{W}^+$ boson and $\text{W}^-$ boson, in fact a proton is composed by up and down quarks. Therefore, a $\text{W}^+$ is produced by a quark up and a $\text{W}^-$ by a quark down. Hence is possible to determine the ratio between quark up and quark down inside a proton by calculating the ratio between a production of a $\text{W}^+$ boson and a $\text{W}^+-$ boson via gluon quark interaction. As can be seen in our date from table \ref{tab:table2} the ratio between $\text{W}^+$ and $\text{W}^-$ is $W_+/W_- = 2.38 \pm 0.62$, which is compatible with [] $1.52 \pm 0.07$. The error is calculated by propagation on the ratio and the error of very event is the standard deviation of the Poisson distribution, such as in the previous section. We only need W boson that are product of an interaction between quark and gluon. It is possible to calculate those events by knowing the probability of having a gluon-gluon interaction versus a gluon-quark interaction. Let $R_{\pm}$ be the number of $\text{W}^\pm$ decay as product of quark-gluon interacion, so
 \[\frac{W_+}{W_-} = \frac{R_+ + a}{R_- + b},\]
 where $a$ and $b$ are respectively the number of $\text{W}^\pm$ due to gluon-gluon interaction. From theory it is possible to derive that $a = b = N/6$, where $N$ is the total number of events. Therefore, it easy to calculate $R_+ = W_+ -a$ and $R_- = W_- -b$. In our case we obtained $R_+/R_- = 4.16 \pm 2.26$.
-
-
-
 \section{Z decays and mass determination}
+\begin{minipage}{\textwidth}
+\includegraphics[width=\textwidth]{img/higgs}
+%\caption{Histogram for Higgs boson candidates}
+\end{minipage}
 
+In order to estimate the mass of the Z boson we analysed 100 events with the software HYPATIA and did the same for the Higgs boson. After the identification of the events, i.e. $Z \to l\bar{l}$, $H\to \gamma\gamma$, and $H\to ZZ\to4l$, we used the Invariant Mass tool to evaluate the mass of the particle decayed. In figure () we plotted an histogram for all the events of possible Higgs candidates. The mean value of the mass is $127.8\pm 3.0$ GeV, where the error is the standard deviation of the data divided by the square root of the number of data. The result is compatible with the literature value \cite{masshiggs} of  $125.09\pm 0.32$ GeV.
 
-\section{Question and conclusion}
-\begin{enumerate}
-\item Inside LHC protons with 6.5 Tev of energy travel at speed of $\simeq 0.99999c$. Therefore we need to consider that in the classical centripetal force $F_c = m \frac{v^2}{r}$,
-$m$ is the relativistic mass $m = \gamma m_0$, where $m_0$ is the rest mass. Hence it's clear that the relativist centripetal force is
-\[F_c = \gamma m_0 \frac{v^2}{r}\]
-\item boh
-\item boh
-\item No functions?
-
-\end{enumerate}
-\begin{comment}
+For the Z boson the data are in figure (), as can be seen, there is a peak near 90 GeV, which it is what we expected, but there are also some data in the order of 1000 GeV. These data could be candidates for a possible Z$'$ boson. The estimated mass of the Z boson is $90.0\pm1.3$ GeV, while for the possible Z$'$ boson is $1150\pm85$ GeV, with error calculated as for the Higgs boson. The Z mass is compatible with the real val ue \cite{Zmass} $91.1876 \pm 0.0021$ GeV. Another estimation for the Z mass can be obtained with a Lorentz fit over the histogram, this is depicted in figure (). The fit is done with the function
+\[f(x) = \frac{1}{\pi}\frac{\Gamma}{(x-m)^2+\Gamma^2}\]
+where $m$ and $\Gamma$ are two parameters to be determined with the fit and they are the x-value for the peak and the half width half maximum of the distribution. The best fit gave us $m = 90.7$ GeV and $\Gamma = 2.1$ GeV.
+%\begin{figure}[h]
+%\includegraphics[width =.5\textwidth]{img/Zboson}% Here is how to import EPS art
+%\end{figure}
+%\begin{figure}[h]
+%\includegraphics[width =.5\textwidth]{img/Zfit}% Here is how to import EPS art
+%\end{figure}
 \section{Bibliography}
 \begin{thebibliography}{99}
 
-  \bibitem{d0det}
-    Standard D\O\ detector reference:  \\
-V.M.~Abazov {\sl et al.} (D0 Collaboration),
-Nucl. Instrum. Methods Phys. Res. A {\bf 565}, 463  (2006).
+  \bibitem{masshiggs}
+    G. Aad et al. (ATLAS Collaboration, CMS Collaboration) Phys. Rev. Lett. {\bf 114}, 191803
 
-  \bibitem{d0lumi}
-    ** New ** D\O\ luminosity reference: \\
-T.~Andeen {\sl et al.}, FERMILAB-TM-2365 (2007).
-
-  \bibitem{pdg}
-   Particle Data Group reference: \\
-   W.-M.~Yao {\sl et al.}, Journal of Physics G {\bf 33}, 1 (2006).
-
-  \bibitem{geant}
-    {\sc Geant} reference: \\
-    R. Brun and F. Carminati, CERN Program Library Long Writeup W5013, 1993 (unpublished).
-
-  \bibitem{pythia}
-    {\sc Pythia} reference: \\
-    T. Sj\"{o}strand {\sl et al.}, Comput. Phys. Commun. {\bf 135}, 238 (2001).
-
-  \bibitem{cteq}
-    {\sc Cteq6} reference: \\
-    J. Pumplin {\sl et al.}, JHEP {\bf 0207} 012 (2002) and
-    D. Stump {\sl et al.}, JHEP {\bf 0310} 046 (2003).
-
-  \bibitem{cls}
-    LEP CL$_S$ reference: \\
-    T. Junk, Nucl. Instrum. Methods A {\bf 434}, 435 (1999).
-
-  \bibitem{d0limit}
-   D\O\ Bayesian reference: \\
-   I. Bertram {\sl et al.}, FERMILAB-TM-2104 (2000).
-
-  \bibitem{d0jets}
-  D\O\ cone-jet reference: \\
-G.C.~Blazey {\it et al.}, in
-{\sl Proceedings of the Workshop: QCD and Weak Boson
-Physics in Run II,} edited by U.~Baur, R.K.~Ellis, and
-D. Zeppenfeld, Fermilab-Pub-00/297 (2000).
+  \bibitem{Zmass}
+   J. Beringer et al. (Particle Data Group), PR D86, 010001 (2012)
 
 \end{thebibliography}
-\end{comment}
 
 \end{document}
 

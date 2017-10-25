@@ -28,6 +28,7 @@
 \usepackage{nicefrac}			% slanted fractions like 3/5
 \usepackage{float}
 \usepackage{braket}
+\usepackage{caption}
 %===============================%
 \usepackage[singlelinecheck=false, figurename=Abb., aboveskip=7pt, belowskip=0pt]{caption}
 				% richtet side captions ordentlich ein
@@ -79,33 +80,69 @@ and thus check if quantum mechanics is complete or not. We found a Bell Paramete
 \end{abstract}
 \section{Introduction}
 Historically quantum mechanics has been subjected of many critics due to its strange nature. Many attempts were made in order to explain this theory in a more intuitive way, one of these it the hidden variables interpretation of quantum mechanics. In order to test this interpretation Bell published an inequality \cite{bellpaper} that cannot be violated if the theory has hidden variable. The advantage of such inequality is that contains quantity that can be experimentally measured. This work it is a test of Bell's inequality, we used entangled photon in order to check this equality. Entangled photons are produced by SPDC inside a BBO ($\beta$ - BaB$_2$O$_4$) crystal. These photons are polarization entangled, this means that we can describe a state of two photons as, for example
-\[\ket{\psi} = \frac{1}{\sqrt{2}}\left(\ket{HV} + \ket{VH}\right),\]
+\begin{equation}\ket{\psi} = \frac{1}{\sqrt{2}}\left(\ket{HV} + \ket{VH}\right),\end{equation}
 where $H$ and $V$ refer to horizontal and vertical polarization respectively. It is also possible to write the same state as a function of the $D/A$ basis, which correspond to $\pm 45$° polarization,
-\[\ket{D} = \frac{1}{\sqrt{2}} \qquad \ket{A} = \frac{1}{\sqrt{2}}\]
+\begin{equation}\ket{D} = \frac{1}{\sqrt{2}} \qquad \ket{A} = \frac{1}{\sqrt{2}}\end{equation}
 (altra roba?).\\
 There are different version of Bell's inequality, but for our experiment the most useful one was derived by Clauser, Horne, Shimony, and Holt [] and it is the following
-\[S = |E(\alpha,\beta)-E(\alpha,\beta')|+|E(\alpha',\beta)+E(\alpha',\beta')|\leq 2,\]
+\begin{equation}S = |E(\alpha,\beta)-E(\alpha,\beta')|+|E(\alpha',\beta)+E(\alpha',\beta')|\leq 2,\end{equation}
 where $S$ is called the Bell's parameter and $E(\alpha,\beta)$ is the expectation value of the polarization correlation measurements where the measure is made on a two photon system with the polarizers set at angle $\alpha$ and $\beta.$ In our experiment, this expectation value can be calculated with the number of coincidences as
-\[E(\alpha,\beta) = \frac{1}{N}(C(\alpha,\beta)+C(\alpha+90,\beta+90)-C(\alpha+90,\beta)-C(\alpha,\beta+90)),\]
+\begin{equation}E(\alpha,\beta) = \frac{1}{N}(C(\alpha,\beta)+C(\alpha+90,\beta+90)-C(\alpha+90,\beta)-C(\alpha,\beta+90)),\end{equation}
 where $C(\alpha,\beta)$ is the number of coincidences with polarizer $A$ set to $\alpha$ and polarizer $B$ set to $\beta$ and $N$ is
-\[N = (\alpha,\beta)+C(\alpha+90,\beta+90)+C(\alpha+90,\beta)+C(\alpha,\beta+90).\]
+\begin{equation}N = (\alpha,\beta)+C(\alpha+90,\beta+90)+C(\alpha+90,\beta)+C(\alpha,\beta+90).\end{equation}
 
 
 \section{Experiment setup}
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{img/setup}
+\includegraphics[width=.9\textwidth]{img/setup}
 \caption{Schematic of the experiment setup}\label{setup}
 \end{figure}
 In figure \ref{setup} the experiment setup is depicted. We used a blue laser source of 404 nm and 100 mW of power. With help of some mirrors this light is focused into a BBO crystal where SPDC happens and entangled photons are created. This process is purely quantum mechanically, one pump photon is converted into a photon pair, a signal photon with vertical polarization and a idler photon with horizontal polarization. Energy conservation in this process must hold and can be written as
-\[\hbar \nu_{pump} = \hbar \nu_{signal} + \hbar\nu_{idler},\]
+\begin{equation}\hbar \nu_{pump} = \hbar \nu_{signal} + \hbar\nu_{idler},\end{equation}
 this means that the sum of signal and idler frequencies must be equal to the frequency of the pump photon. Moreover, the photons must also obey momentum conservation which can is
-\[\hbar \k_{pump} = \hbar \k_{signal} + \hbar\k_{idler}.\]
-This implies that signal and idler photons are emitted in opposite direction with respect to pump photon, since wavevector must be conserved. Hence, entangled photons emerge in two different cones, and we can exploit this feature to split the beam in two separated different beams, one for the horizontal polarized photons and the other for the vertical polarized ones. This is done in the experiment setup using two small prisms. Then each photon goes through a lens that collimate the beam in a halfwave plate for rotating the polarization by 90 degrees and after inside another BBO crystal used to compensate walk off effects.  Walk off effects are due to the birefringence of the first
+\begin{equation}\hbar \k_{pump} = \hbar \k_{signal} + \hbar\k_{idler}.\end{equation}
+This implies that signal and idler photons are emitted in opposite direction with respect to pump photon, since wavevector must be conserved. Hence, entangled photons emerge in two different cones, and we can exploit this feature to split the beam in two separated arms of the setup, one for the horizontal polarized photons and the other for the vertical polarized ones. This is done in the experiment with two small prisms. Then each photon goes through a lens that collimate the beam into an halfwave plate for rotating the polarization by 90 degrees and after that inside another BBO crystal used to compensate walk off effects. Walk off effects are due to the birefringence of the first BBO crystal where vertical polarized photon and horizontal polarized photon travel in different direction with different velocities. Therefore, entangled photon become distinguishable, so the second BBO crystal is used as compensation. Before passing through the polarizer, photon are filtered in order to remove unwanted pump photons. Then, after the filter stage, there is a polarizer with a tunable angle that can be used to change parameters for our experiment (?rifrasa). Finally photons are coupled inside optical fiber and measured with an avalanche photodiode (APD). APDs of both arm are connected together to a logical circuit which perform coincidence measurements. 
 
 \section{Measurements and analysis}
-
-
+\subsection{Visibility}
+First of all, in order to test our setup we measured visibility in $HV$ base, with the following
+\begin{equation}\label{eq:visibilityHV}V = \frac{N_{HV}+N_{VH}-N_{HH}-N_{VV}}{N_{HV}+N_{VH}+N_{HH}+N_{VV}},\end{equation}
+where $N_{XY}$ is the number of coincidences when polarizer $A$ was set to $X$ and $B$ to $Y$. For every quantity we measured the number of coincidences over a time of one second for ten times, in order to have statistical error. Our measurement can be found in table \ref{tab:visibilityHV}, the error is the standard deviation. From this data we obtained $V = 0.94 \pm 0.08$,
+Although the visibility is good (desired would be 1.0), there is a difference greater then 20\% between coincidence measurement of $HV$ and $VH$. This means that the setup is not properly aligned and it requires to be adjusted. Therefore, before proceeding in the next measurements, we aligned compensation crystals and checked visibility in the $DA$ base, which can be written in a similar way of \eqref{eq:visibilityHV}
+\begin{equation}V = \frac{N_{DA}+N_{AD}-N_{DD}-N_{AA}}{N_{DA}+N_{AD}+N_{DD}+N_{AA}}.\end{equation}
+Result in the $DA$ base can be found in table \ref{tab:visibilityDA}, where the measurements are done as for the $HV$ base and the error is calculated in the same way. We obtained a visibility of $V =  0.77\pm0.075$, which is worse then before, but now the coincidences of $DA$ and $AD$ are closer.
+\begin{table}[h]
+\centering
+\begin{minipage}{.48\textwidth}
+\centering
+\begin{tabular}{c|c|c|c}
+  & $A$& $B$& Coincidences \\
+\hline
+$HH$ & 90° & 90° & $0.4 \pm 0.15$\\
+$VV$ & 0° & 0° & $0.2 \pm 0.13$\\
+$HV$ & 90° & 0° & $5.2 \pm 0.5$ \\
+$VH$ & 0° & 90° & $13.0\pm 0.9$\\
+\end{tabular}
+\caption{\label{tab:visibilityHV}Number of coincidences in $HV$ base, error on the angles is due to the resolution of the polarizers: 1°}
+\end{minipage}\hspace{1.5em}% This must go next to `\end{minipage}`
+\begin{minipage}{.48\textwidth}
+\centering
+\begin{tabular}{c|c|c|c}
+  & $A$& $B$& Coincidences \\
+\hline
+$DD$ & 45° & 45° & $1.2 \pm 0.3$\\
+$AA$ & 135° & 135° & $1.4 \pm 0.25$\\
+$AD$ & 135° & 45° & $8.8 \pm 1.1$ \\
+$DA$ & 45° & 135° & $11.7 \pm 0.7$\\
+\end{tabular}
+\caption{\label{tab:visibilityDA}Number of coincidences in $DA$ base, error on the angles is due to the resolution of the polarizers: 1°}
+\end{minipage}
+\end{table}
+\subsection{Correlation measurements}
+In order to measure the Bell's parameter, we did correlation measurements. First we set the polarizer $A$ at fixed angle 0° and then we measured coincidences at different angle of polarizer $B$. We went from 0° to 200° with a step of 4°, each time we took 1 second of coincidences for ten times. We did again it with the polarizer $A$ fixed at 45°. The plot of these two correlation measurements is in figure (). The data has been fitted with a sine function of the form
+\[C = A\sin(\omega\beta +\phi) +  B,\] 
+and yield as fit parameters to $A = ,\omega=,\phi=,B=$.
 
 \begin{thebibliography}{99}
 

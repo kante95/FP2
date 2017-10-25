@@ -20,7 +20,7 @@ def lorentz(x,m,s):
 masses = read_data("Zboson.csv")
 
 plt.figure(1)
-bins = np.logspace(1, 3.17, num=(1500-10)/10) # limits 10 -1500 and bin of 5
+bins = np.logspace(1, 3.17, num=(1500-10)/10 +1) # limits 10 -1500 and bin of 5
 #bins = np.linspace(50,1500,num = (1500-50)/2)
 plt.hist(masses, bins = bins)
 plt.title("Histogram of invariant masses of possible Z boson candidates")
@@ -41,7 +41,7 @@ error = np.std(Zprimemasses)/m.sqrt(len(Zprimemasses))
 print("Z' boson  mass: " + str(mass) +"+/-" + str(error))
 
 #fit
-bins = np.linspace(60,130,num = (130-60)/3)
+bins = np.linspace(60,130,num = (130-60)/3 +1)
 y,b = np.histogram(Zmasses, bins=bins,density=True)
 for i in range(len(y)-1):
 	b[i] = (b[i+1]+b[i])/2
@@ -55,8 +55,10 @@ x = np.linspace(60,130,num=(130-60)/0.1)
 y = np.zeros_like(x)
 for i in range(len(x)):
 	y[i] = lorentz(x[i],*parameters)
-plt.plot(x,y,label="fit")
+plt.plot(x,y,label="Lorentz function fit")
 plt.legend()
+plt.xlabel("Mass [GeV]")
+plt.ylabel("Number of events normalized ")
 
 #Histogram of Higgs boson candidates
 
@@ -68,11 +70,11 @@ print("Higgs boson mass: " + str(mass) +"+/-" + str(error))
 
 
 plt.figure(2)
-bins = np.linspace(100, 170, num=(170-100)/2) #limits 100-170 bin of 2
+bins = np.linspace(100, 180, num=(180-100)/4 +1) #limits 100-170 bin of 2
 plt.hist(masses, bins = bins)
 plt.title("Histogram of invariant masses of possible Higgs boson candidates")
 plt.xlabel("Mass [GeV]")
 plt.ylabel("Number of events ")
-plt.yticks(np.arange(1, 5, 1,dtype=np.int32)) #just for nice label
+plt.yticks(np.arange(1, 6, 1,dtype=np.int32)) #just for nice label
 #plt.grid(True)
 plt.show()
