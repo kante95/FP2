@@ -43,11 +43,16 @@ print("Z' boson  mass: " + str(mass) +"+/-" + str(error))
 #fit
 bins = np.linspace(60,130,num = (130-60)/3 +1)
 y,b = np.histogram(Zmasses, bins=bins,density=True)
+ynotnormalized,roba = np.histogram(Zmasses, bins=bins)
+yerr = np.zeros_like(ynotnormalized)
+for i in range(len(y)):
+	yerr[i] = np.sqrt(ynotnormalized[i]) if ynotnormalized[i] !=0 else 1
+print(yerr)
 for i in range(len(y)-1):
 	b[i] = (b[i+1]+b[i])/2
 b = b[:-1]
-parameters, roba_inutile = curve_fit(lorentz,b,y)
-print(parameters)
+parameters, pcov = curve_fit(lorentz,b,y,sigma=yerr)
+print(parameters,np.sqrt(np.diag(pcov)))
 weights = np.ones_like(Zmasses)/(len(Zmasses))
 plt.figure(3)
 plt.hist(Zmasses,bins = bins,density=True)
