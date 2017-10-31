@@ -83,13 +83,9 @@ def bell_parameter(nums,bells,errors):
 	dE = E*(np.sqrt(sum(errors[i]**2/(den)**2 for i in nums)+sum(errors[i]**2/(num)**2 for i in nums) ))
 	return E,dE
 
-#E1 = (bell[10]+bell[0]-bell[2]-bell[9])/(bell[10]+bell[0]+bell[2]+bell[9])
 E1,dE1 = bell_parameter([10,0,2,9],bell,error)
-#E2 = (bell[8]+bell[1]-bell[11]-bell[3])/(bell[8]+bell[1]+bell[11]+bell[3])
 E2,dE2 = bell_parameter([8,1,11,3],bell,error)
-#E3 = (bell[4]+bell[14]-bell[6]-bell[13])/(bell[4]+bell[14]+bell[6]+bell[13])
 E3,dE3 = bell_parameter([4,14,6,13],bell,error)
-#E4 = (bell[5]+bell[15]-bell[12]-bell[7])/(bell[5]+bell[15]+bell[12]+bell[7])
 E4,dE4 = bell_parameter([5,15,12,7],bell,error)
 
 S = np.absolute(E1-E2)+np.absolute(E3+E4)
