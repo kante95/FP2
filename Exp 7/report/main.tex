@@ -1,0 +1,97 @@
+\documentclass[a4paper,10pt]{article} 
+
+\usepackage[utf8]{inputenc} 
+%\usepackage[T1]{fontenc}
+
+\usepackage{textcomp}           % Extra Symbole (Grad Celsius etc.)
+\usepackage{amssymb,amsmath}    % Schöne Formeln (AMS = American Mathematical Society)
+\usepackage{graphicx}           % Bilder und Seitenränder
+\usepackage{subcaption}			% captions for subfigures
+\usepackage{booktabs}           % Schönere Tabellen
+\usepackage{colortbl}           % Farbige Tabellen
+
+%\usepackage{tcolorbox}			% schöne bunte Boxen
+\usepackage{mathtools}			% \mathclap für ordentliche \underbrace-			environments
+\usepackage{geometry}			% Pagelayout mit \newgeometry, \restoregeometry
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{braket}
+\usepackage{caption}
+\usepackage{pst-optexp}
+\usepackage{auto-pst-pdf}
+
+\graphicspath{{./img/}}
+
+
+\bibliographystyle{unsrtnat}
+
+\renewcommand{\k}{\mathbf{k}}
+\begin{document}
+\begin{titlepage}
+ \begin{center}
+	\Large{Advanced laboratory class 2}
+	\end{center}
+	\begin{center}
+	 \LARGE{\textbf{FP2 - Nonlinear Optics - Second Harmonic Generation}}
+	\end{center}
+	
+	\begin{center}
+	
+	\large Marco \textsc{Canteri} \\
+	marco.canteri@student.uibk.ac.at
+	\end{center}
+	
+	\begin{center}
+	\vspace{1cm}
+	Innsbruck, \today
+	\vspace{2cm}
+	\end{center}
+	
+	\begin{center}
+	\includegraphics[scale=0.4]{img/uibk} 
+	\end{center}
+
+\end{titlepage}
+\begin{abstract}
+In this work we generated ultraviolet light at around $317$ nm from a laser beam of $633$ nm exploiting Second Harmonic Generation (SHG), a second order non linear effect of a pottassium
+dihydrogen phospahte (KDP) crystal. We measured the power of the red laser as a function of the angle of a polarizer, then we studied the efficiency of the SHG with respect to the crystal angle.
+\end{abstract}
+\section{Introduction}
+Non linear optics bla bla bla
+\section{Experiment setup}
+\begin{figure}[H]
+\centering
+\begin{pspicture}[showgrid=false](8,2)(-3,-2)
+\pnode(1,1){A}\pnode(5,1){B}\pnode(5,-1){C}\pnode(1,-1){D}
+\optsource[position=start,innerlabel](A)(B){\parbox{1.5cm}{\centering He:Ne\\ 633\,nm}}
+\optretplate[position=0.2](A)(B){$\nicefrac{\lambda}{2}$}
+\optplate[position=0.6](A)(B){pol}
+\mirror(A)(B)(C)
+\mirror(B)(C)(D)
+\optbox[position=start,innerlabel](D)(C){PMT}
+\optbox[innerlabel,position=.5,optboxwidth=0.9](D)(C){KDP}
+\lens[position=.35,lensheight=0.6](D)(C){}
+\lens[position=.65,lensheight=0.6](D)(C){}
+\pinhole[position=.95,outerheight=.7](C)(D){}
+\drawbeam[linecolor=red]{1}{2}{3}{4}{5}{9}{7}
+\drawbeam[linecolor=blue]{7}{8}{6}
+\end{pspicture}
+\caption{Experiment setup. A red laser is pumped into a KDP crystal to generate ultraviolet light at 317 nm (showed in blue in this figure) detected with a photomultiplier}
+\end{figure}
+\section{Measurements and analysis}
+
+ \begin{thebibliography}{99}
+
+  \bibitem{bellpaper}
+     \textsc{J. Bell}, \textit{On the Einstein Podolsky Rosen paradox}, Physics, 1 (1964), pp. 195–200.
+
+  \bibitem{inequality}
+   \textsc{J. F. Clauser, M. A. Horne, A. Shimony und R. A. Holt}, \textit{Proposed experiment to
+test local hidden-variable theories}, Phys. Rev. Lett., 23 (1969), pp. 880–884.
+
+\bibitem{skriptum}
+Fortgeschrittenenpraktikum 2, \textit{Entanglement and Bell’s inequality}. \textsc{Gregor Weihs, Kaisa Laiho, Harishankar Jayakumar}. WS 2015/16
+\end{thebibliography}
+\end{document}
