@@ -14,13 +14,24 @@ def read_oscilloscope_data(file):
                          usecols=range(3,5), skip_header=0)
     return data[:,0],data[:,1]
 
+def cos_fit(x, pmax):
+	return pmax*np.cos(np.pi*x/180)**2
+
 #Input power
 angle,power,errors = read_data("power_polarizer.csv")
+xerr = np.full_like(errors, 2/np.sqrt(12))
 plt.figure()
-plt.errorbar(angle,power,yerr=errors*10**-3,xerr=np.full_like(errors, 2/np.sqrt(12)),fmt='.')
+plt.errorbar(angle,power,yerr=errors*10**-3,xerr=xerr,fmt='.',label="Experimental points")
 plt.xlabel("Angle [°]")
 plt.ylabel("Power [mW]")
 
+toterr = np.sqrt(errors*10**-6 + (xerr*7.1*np.sin(xerr) )**2 )
+params, pcov = curve_fit(cos_fit, angle, power,sigma=toterr)
+perr = np.sqrt(np.diag(pcov))
+print(params)
+print(perr)
+plt.plot(np.linspace(0,350,1300),cos_fit(np.linspace(0,350,1300),*params),label = r"fit $f(\theta) = P_{max}\cos^2\theta$")
+plt.legend()
 
 #SHG power
 file = np.arange(0,36)
@@ -34,9 +45,10 @@ for i in range(len(file)):
 angles = np.arange(0,360,10)
 
 plt.figure()
-plt.errorbar(angles,mean,yerr=error,xerr = np.full_like(error, 2/np.sqrt(12)),fmt='.-' )
+plt.errorbar(angles,mean,yerr=error,xerr = np.full_like(error, 2/np.sqrt(12)),fmt='.-',label="Experimental points" )
 plt.xlabel("Angle [°]")
 plt.ylabel("Voltage [V]")
+plt.legend()
 
 
 
