@@ -1,0 +1,116 @@
+\documentclass[a4paper,10pt]{article} 
+
+\usepackage[utf8]{inputenc} 
+%\usepackage[T1]{fontenc}
+
+\usepackage{textcomp}           % Extra Symbole (Grad Celsius etc.)
+\usepackage{amssymb,amsmath}    % Schöne Formeln (AMS = American Mathematical Society)
+\usepackage{graphicx}           % Bilder und Seitenränder
+\usepackage{subcaption}			% captions for subfigures
+\usepackage{booktabs}           % Schönere Tabellen
+\usepackage{colortbl}           % Farbige Tabellen
+
+%\usepackage{tcolorbox}			% schöne bunte Boxen
+\usepackage{mathtools}			% \mathclap für ordentliche \underbrace-			environments
+\usepackage{geometry}			% Pagelayout mit \newgeometry, \restoregeometry
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{braket}
+\usepackage{caption}
+\input{insbox.tex}
+%\usepackage{pst-optexp}
+%\usepackage{auto-pst-pdf}
+
+\graphicspath{{./img/}}
+
+
+\bibliographystyle{unsrtnat}
+
+\renewcommand{\k}{\mathbf{k}}
+\begin{document}
+\begin{titlepage}
+ \begin{center}
+	\Large{Advanced laboratory class 2}
+	\end{center}
+	\begin{center}
+	 \LARGE{\textbf{FP2 - Amplitude and Phase modulation}}
+	\end{center}
+	
+	\begin{center}
+	
+	\large Marco \textsc{Canteri} \\
+	marco.canteri@student.uibk.ac.at
+	\end{center}
+	
+	\begin{center}
+	\vspace{1cm}
+	Innsbruck, \today
+	\vspace{2cm}
+	\end{center}
+	
+	\begin{center}
+	\includegraphics[scale=0.4]{img/uibk} 
+	\end{center}
+
+\end{titlepage}
+\begin{abstract}
+In this experiment we studied three different modulation techniques: amplitude, frequency, and phasemodulation. In the first part we simply generated a modulated signal with a frequency generator and analysed it with an oscilloscope. In the second part of the experiment we constructed an amplitude modulated signal from two different frequency generators, converted it from an electric to a light signal with an Acousto-Optical Modulator (AOM) and demodulated with a photodiode before measuring it. Finally we studied the frequency response of our system.
+\end{abstract}
+\section{Introduction}
+The experiment is divided in two parts. The aim of the first part is to study modulated signal in time and frequency domain. In order to fulfil this goal we used a very simple setup consisting of a frequency generator connected to an oscilloscope. We exploited the frequency generator features to create a modulated signal in amplitude, frequency and phase. 
+For the amplitude modulated signal we measured the wave for three different AM depths and another one with a different frequency. Frequency modulation was studied for ten different frequency deviations, we acquired the time signal for only two frequencies, for the rest we studied only the spectrum. Finally we took one measure of a phase modulated square wave signal both in time and frequency domain.\\
+For the second part we created an amplitude modulated signal from two different function generators, then we converted this electric signal into a light one using an Acousto-Optical Modulator (AOM). The light signal was later detected and demodulated with a photodiode, whose signal was analysed with an oscilloscope. We studied the frequency response of this system and we tried to determine AOM's proprieties with the phase delay.
+\section{Theory}
+\subsection{Amplitude modulation}
+Amplitude modulation is a technique used to encode a message signal $m(t)$ into a carrier wave which is then transmitted and demodulated in order to recover the original message. Amplitude modulation, as the name suggests, consists of encoding $m(t)$ into the amplitude of a cosine wave, i.e.
+\begin{equation}\label{ammodulation}x(t) = A_c (1+ m(t))\cos(2\pi f_c t),\end{equation}
+In our experiment we used as message a cosine wave $m(t) = h\cos(\omega_m t)$, where $h$ is called modulation index. Usually $h$ is expressed as a percentage and in that case it is called AM depth.\\
+The spectrum of $x(t)$ can be calculated mathematically by performing a Fourier transform on the function, but first it is better if we rewrite equation \eqref{ammodulation} with prosthaphaeresis identities
+\[x(t) = A_c \cos(2\pi f_c t) + \frac{A_ch}{2}\left[\cos(2\pi(f_c + f_m)t)+\cos(2\pi(f_c - f_m)t)\right].\]
+Here the spectrum is evident, there is a peak at $f_c$ and two side peaks one on each side of $f_c$ spaced from the central peak by $f_m$, as depicted in figure.
+\subsection{Frequency and phase modulation}
+Instead of encoding a message in the amplitude of a cosine carrier, we can encode it in the phase on in the frequency of such carrier. In the most general case $m(t)$ can be transmitted in the form
+\[x(t) = A_c \cos(2\pi f_ct + \phi(m(t))).\]
+In the case of frequency modulation, we have $\phi(m(t))= a \int m(t)dt$, while for phase modulation it is simply $\phi(t) = a m(t)$. Therefore, frequency and phase modulation are strictly correlated and we can switch from one to the another taking the integral of the message. Thus, here we treat only the frequency case, but our derivations hold for phase modulation too. \\
+Suppose that we want to transmit a message of the form $m(t) = A_m \cos (2\pi f_mt)$, as we do in our experiment, let us choose $a = 2\pi f_\Delta$, where $f_\Delta$ is called frequency deviation, then for the frequency modulation we have a modulated signal
+\begin{equation}\label{freqmodu}x(t) = A_c \cos\left(2\pi f_ct + A_m \int \cos (2\pi f_mt)\right) =  A_c \cos\left(2\pi f_ct + \frac{A_m f_\Delta }{f_m }\sin (2\pi f_mt)\right), \end{equation}
+in order to simplify the expression, we define $\omega_c = 2\pi f_c,\omega_m = 2\pi f_m$ and we define the modulation index $\mu = \displaystyle\frac{A_m f_\Delta }{f_m }$. With these new definitions, we can write equation \eqref{freqmodu} as
+\[x(t) =  A_c \cos\left(\omega_ct + \mu\sin (\omega_mt)\right).\]
+It is difficult to calculate the Fourier transform to obtain the spectrum, but we can rewrite our expression such that the spectrum is easier to evaluate. For this reason we can try to write $x(t)$ as a sum of cosines. First of all it is better to work with complex exponentials, so
+\begin{equation}\label{complexform}x(t) = \text{Re}\left(A_c e^{i\omega_c t}e^{i\mu \sin(\omega_m t)}\right).\end{equation}
+Now we notice that the second exponential has a period of $T = 2\pi/\omega_m$, therefore we can expand it as a Fourier series\footnote{If f(t) is periodic with period $T$, it holds that $f(t) = \displaystyle\sum_{n=-\infty}^{+\infty} c_n e^{i2\pi n t/T}$, where $c_n = \frac{1}{T}\displaystyle\int_{-T/2}^{T/2}f(t)e^{-i2\pi n t/T}\,dt$}:
+\[e^{i\mu \sin(\omega_m t)} = \sum_{n=-\infty}^{+\infty }c_n e^{i\omega_mn t} \qquad c_n=\frac{\omega_m}{2\pi}\int_{-\frac{\pi}{\omega_m}}^{\frac{\pi}{\omega_m}}e^{i\mu \sin(\omega_m t)}e^{-i\omega_mnt}\,dt.\]
+In the integral we perform a substitution $\omega_m t = \theta \implies dt = d\theta/\omega_n$, so we obtain
+\[c_n=\frac{1}{2\pi}\int_{-\pi}^{\pi}e^{i(\mu \sin(\theta)-n\theta)}\,d\theta \equiv J_n(\mu),\]
+where we recognized the integral representation of Bessel functions \cite{bessel}. Therefore we arrive at
+\[e^{i\mu \sin(\omega_m t)} = \sum_{n=-\infty}^{+\infty }J_n(\mu) e^{i\omega_mn t},\]
+we can use this equation in \eqref{complexform}, which yields to
+\[x(t) =  \text{Re}\left(A_c e^{i\omega_c t}\sum_{n=-\infty}^{+\infty }J_n(\mu) e^{i\omega_mn t}\right) =\text{Re}\left(A_c\sum_{n=-\infty}^{+\infty }J_n(\mu) e^{i(\omega_c +\omega_mn )t}\right).\]
+Finally we take the real part and we get
+\[x(t) = A_c \sum_{n=-\infty}^{+\infty }J_n(\mu) \cos((\omega_c +\omega_mn )t).\]
+The Fourier transform is now straightforward, since it is linear. In the spectrum we will find symmetric peaks with respect to $f_c$ equally spaced by $f_m$. The heights of these peaks are proportional to Bessel functions.
+\subsection{Acousto-Optical Modulator}
+AOM is a device that can be used to turn an electric signal into a light one. Basically it is block of a certain material which undergoes to vibrations produced by a piezo-electric transducer. The electric signal is converted into sound waves which change the refractive index of the material such that a grating is formed. The incoming light diffracts due to this grating and the diffracted light changes its wavelength, intensity and phase. For our analysis it is important to focus on the phase whom the light acquire. From a bode diagram of the system it is possible to evaluate the sound speed inside the AOM from the acquired phase. Indeed the phase shift is to to the time needed from the sound wave to reach the light beam let us call this time $t$, and the distance that sound has to travel as $d$. Therefore, the velocity of sound is $v_s = d/t$, $d$ is a propriety of the device and can be obtained from the datasheet. $t$ can be measured from the phase shift which is in fact $\phi = t f_m$, therefore we expect from a bode diagram a linear dependence of the phase with the frequency.
+\section{Experiment setup}
+
+
+\section{Data analysis}
+
+
+\section{Summary and conclusion}
+
+
+\begin{thebibliography}{99}
+\bibitem{bessel}
+\textsc{Temme, Nico M.}, \textit{Special functions: an introduction to the classical functions of mathematical physics}, (2. print. ed.). New York 1996, Wiley. pp. 228–231. 
+ \bibitem{signaltheory}
+ http://www.commsys.isy.liu.se/TSDT03/material/ch5-2007.pdf
+ \bibitem{saleh}
+  \textsc{Bahaa E. A. Saleh, Malvin Carl Teich}, \textit{Fundamentals of photonics}, Wiley series in pure and applied optics, 1991, 1st edition
+
+\bibitem{skriptum}
+Fortgeschrittenenpraktikum 2, \textit{Experiment FP2-07: Nonlinear Optics - Second Harmonic Generation}. \textsc{Slava M. Tzanova, Klemens Schuppert}.
+\end{thebibliography}
+\end{document}
