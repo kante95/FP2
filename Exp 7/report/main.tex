@@ -59,10 +59,10 @@
 In this work we generated ultraviolet light at around $317$ nm from a laser beam of $633$ nm exploiting Second Harmonic Generation (SHG), a second order non linear effect of a
 potassium dihydrogen phosphate (KDP) crystal. We measured the power of the red laser as a function of the angle of a polarizer, then we studied the efficiency of the SHG with respect to the crystal angles and input power.
 \end{abstract}
-\section{Introduction}
-Inside a medium the relation between the polarization and the electric field $E$ is in first approximation linear. If the intensity of the electric field is strong enough, the relation between the field and the polarization is no longer linear and we can expand the relation. In general we find
+\section{Theory}
+Inside a medium the relation between the polarization and the electric field $E$ is in first approximation linear. If the intensity of the electric field is strong enough, the relation between the field and the polarization is no longer linear and we have to consider higher-order effects. In general we find
 \begin{equation}P_i  = \varepsilon_0\left(\sum_j \chi_{ij}^{(1)} E_j + \sum_{j,k}x_{ijk}^{(2)}E_jE_k + \sum_{j,k,l}\chi_{ijkl}^{(3)}E_jE_kE_l + \dots \right)\end{equation}
-where the $\chi^{(i)}$ are tensors of rank $i+1$ and represent the $i$-order susceptibily. This leads to an entire new class of phenomen. in fact it is passible, to excite a new electric field of frequency $\omega_2$ with an electric field of frequency $\omega_1$.\\
+where the $\chi^{(i)}$ are tensors of rank $i+1$ and represent the $i$-order susceptibility. This leads to an entire new class of phenomena. In fact it is possible, as we will show below, to excite a new electric field of frequency $\omega_2$ with an electric field of frequency $\omega_1$.\\
 From the Maxwell equations we can obtain \cite{saleh} the following differential equation for the electric field
 \begin{equation}\left(\nabla^2 - \frac{1}{c^2}\frac{\partial^2}{\partial t^2}\right)E = \mu_0\frac{\partial^2 P_{NL}}{\partial t^2}\end{equation}
 where $P_{NL}$ are the non linear terms of the polarization. We can see from this equation that the non linear polarization acts like a source for the electric field. Therefore, the electric field will oscillate at the same frequency of the polarization. Now, if we consider an exciting wave of frequency $\omega$:
@@ -70,14 +70,14 @@ where $P_{NL}$ are the non linear terms of the polarization. We can see from thi
 and we neglect any non linear order greater than two, we can see that $P_{NL}$, which goes with the square of the field, contains several terms of different frequency. We will focus on that which has a frequency of $2\omega$. Hence, we will look at generated light with frequency $2\omega$, this process is called Second Harmonic Generation.\\
 In this experiment we used a KDP crystal to generate a frequency of 317 nm from a red laser of 633 nm. The main purpose was to study the efficiency of such process. The power of the generated light can be written \cite{saleh} as
 \[I_{2\omega} \propto \text{sinc}^2\left(L\frac{\Delta k}{2 }\right),\]
-where $\Delta k = \frac{4\pi}{\lambda}(n_{2\omega} - n_\omega)$ is called the phase matching relation and $L$ is the length of the crystal. In order to get the maximum power, it must holds $\Delta k = 0$. Therefore, the refractive index at frequency $\omega$ must be equal to the refractive index of frequency $2\omega$. In a normal crystal this never occurs due to the dispersion of light, but we can exploit birefringence of the crystal. For an extraordinary wave with angle $\theta$, the refractive index is given by the following formula \cite{saleh}
-\[\frac{1}{n^2(\theta,\omega)} = \frac{\cos^2\theta}{n_o(\omega)}+\frac{\sin^2\theta}{n_e(\omega)}.\]
+where $\Delta k = \frac{4\pi}{\lambda}(n_{2\omega} - n_\omega)$ is called the phase matching relation and $L$ is the length of the crystal. In order to get the maximum power, it must holds $\Delta k = 0$. Therefore, the refractive index at frequency $\omega$ must be equal to the refractive index of frequency $2\omega$. In a normal crystal this never occurs due to the dispersion of light, but we can exploit birefringence of the crystal, i.e. the crystal has different refractive indexes for different light polarization. For an extraordinary wave with angle $\theta$, the refractive index is given by the following formula \cite{saleh}
+\[\frac{1}{n^2(\theta,\omega)} = \frac{\cos^2\theta}{n_o(\omega)}+\frac{\sin^2\theta}{n_e(\omega)},\]
 \InsertBoxR{0}{
   \begin{minipage}{5.5cm}
   \includegraphics[width = 5.5cm]{elipsoid}
   \captionof{figure}{Refractive index ellipsoid, red line refers to frequency $\omega$, blue line to $2\omega$}
-\end{minipage}}[4]
-Therefore, if the incoming and the generated waves have different polarization, they will also travel with different refractive index that can be used in order to compensate dispersion.
+\end{minipage}}[6]
+\hspace{-1.4em}where $n_o$ is the ordinary refractive index and $n_e$ is the extraordinary refractive index of the crystal. Therefore, if the incoming and the generated waves have different polarization, they will also travel with different refractive index that can be used in order to compensate dispersion.
 There are two different type of phase matching, when the incoming waves have ordinary polarization it is called Type I phase matching, otherwise, if the waves have perpendicular polarization, it is called Type II phase matching. This condition can be visualized with the help of the so called refractive index ellipsoid. In the figure we can notice that there are some points where the extraordinary refractive index with frequency $\omega$ is equal to the ordinary refractive index with frequency $2\omega$, that is where there is phase matching.
 
 \section{Experiment setup}
@@ -99,41 +99,50 @@ There are two different type of phase matching, when the incoming waves have ord
 % \drawbeam[linecolor=red]{1}{2}{3}{4}{5}{9}{7}
 % \drawbeam[linecolor=blue]{7}{8}{6}
 % \end{pspicture}
-\caption{Experiment setup. A red laser is pumped into a KDP crystal to generate ultraviolet light at 317 nm (showed in blue in this figure) detected with a photomultiplier}\label{setup}
+\caption{Experiment setup. A red laser is pumped into a KDP crystal to generate ultraviolet light at 317 nm (shown in blue in this figure) detected with a photomultiplier. $L_1$ and $L_2$ are lenses}\label{setup}
 \end{figure}
 % \InsertBoxL{0}{
 %   \begin{minipage}{5cm}
 %   \includegraphics[width = 5cm]{polarizerangle}
 % \end{minipage}}
-The experiment setup is depicted in figure \ref{setup} and it consists of a Helium-Neon laser which output a light of 633 nm, followed by an half wave plate to rotate the polarization and a polarizer. Then the light is reflected with two mirrors and sent trough a potassium dihydrogen phosphate crystal. Finally the light is detected with a photomultiplier powered with 1700 V after it is collimated and filtered. The photomultiplier was connected to an oscilloscope where we visualized and saved the data. The crystal is mounted of rotating platform, such that it was possible to change the angle of the crystal orientation in order to study the efficiency of SHG. We had two degrees of freedom corresponding to two different angles $\theta$ e $\phi$ as shown in the photo below. 
+The experiment setup is depicted in figure \ref{setup} and it consists of a Helium-Neon laser which output a light of 633 nm, followed by an half wave plate to rotate the polarization and a polarizer. Then the light is reflected with two mirrors and sent trough a potassium dihydrogen phosphate crystal. Finally the light is detected with a photomultiplier powered with 700 V after it is collimated and filtered. The photomultiplier was connected to an oscilloscope where we visualized and saved the data. The crystal is mounted of rotating platform, such that it was possible to change the angle of the crystal orientation in order to study the efficiency of SHG. We had two degrees of freedom corresponding to two different angles $\theta$ and $\phi$ as shown in the photo below. 
 \begin{figure}[H]
 \centering
 \includegraphics[width = .4\textwidth]{polarizerangle}
 \caption{Angles of the crystal on which  we were able to act}
 \end{figure} 
 \section{Measurements and analysis}
-Before performing the measurements on SHG, we first measured the power of the laser for different angles of the polarizer. The measured were taken with a powermeter, we took 10 seconds of measurements and we used the built-in function for the average value and the standard deviation. We started from angle 0° to 360° with a step of 10 degrees. As can be seen from the plot in figure \ref{polarizer}, the data are in agreement with the theoretical law $P = P_{max}\cos^2(\theta)$, a fit has been done and it leads to $P_{max} = 7.24\pm  0.07$ mW.
+Before performing the measurements on SHG, we first measured the power of the laser for different angles of the polarizer. Measurements were taken with a powermeter, we took 10 seconds of measurements and we used the built-in function for the average value and the standard deviation. We started from angle 0° to 360° with a step of 10 degrees. As can be seen from the plot in figure \ref{polarizer}, the data are in agreement with the theoretical law $P = P_{max}\cos^2(\theta)$, a fit has been done and it leads to $P_{max} = 7.24\pm  0.07$ mW.
 \begin{figure}[H]
 \centering
 \includegraphics[width = \textwidth]{polarization}
 \caption{Power of the Helium Neon laser as a function of the polarizer angle. The error of the angle is due to the resolution of the polarizer, anyway the error bars are to small to be seen}
 \label{polarizer}
 \end{figure}
-Then, we set the polarizer at 180 degrees, so the light that went through the crystal was vertical polarized. Thus we measured the power of the second harmonic with a photomultiplier. We chose a fixed angle $\theta = 11$°, while we changed the angle $\phi$. We took measure from 0° to 360° with a step of 10 degrees. In the oscilloscope we acquired data with a scale of 500 $\mu$s, we averaged these data and calculated the standard deviation in order to get an error, while the error in the angle is only due to the resolution. The plot is show in figure \ref{spectrum}. We can notice two dips, one at around 130° and the other one at around 290°. The minimum in voltage correspond to maximum in the power of the SHG. Therefore on these angles phase matching is achieved and we can observe the frequency doubling.
+Then, we set the polarizer at 180 degrees, so the light that went through the crystal was vertical polarized. Thus we measured the power of the second harmonic generation process with a photomultiplier. We chose a fixed angle $\theta = 11$°, while we changed the angle $\phi$. We took measurements from 0° to 360° with a step of 10 degrees. In the oscilloscope we acquired data with a scale of 500 $\mu$s, we averaged these data and calculated the standard deviation in order to get an error, while the error in the angle is only due to the resolution. The plot is show in figure \ref{spectrum}. We can notice two dips, one at around 130° and the other one at around 290°. The minimum in voltage correspond to maximum in the power of the SHG. Therefore on these angles phase matching is achieved and we can observe the frequency doubling.
 \begin{figure}[H]
 \centering
 \includegraphics[width = \textwidth]{spectrum}
 \caption{Photomultiplier signal of the second harmonic as a function of $\phi$, experimental data are shown in point, while the line is only for eyes helping. The errors are too small and cannot be seen}
 \label{spectrum}
 \end{figure}
-After this measure, we kept $\phi$ fixed at $\phi=290$° and we changed $\theta$. We went from 37° to -2° due to limitation of space. Errors are calculated as before and we used the same scale on the oscilloscope.
+After this measure, we kept $\phi$ fixed at $\phi=290$° and we changed $\theta$. We went from 37° to -2° due to limitation of the setup. The crystal and the lenses were too close to allow a large rotation of the crystal. Errors are calculated as before and we used the same scale on the oscilloscope.
 \begin{figure}[H]
 \centering
 \includegraphics[width = \textwidth]{spectrum2}
 \caption{Photomultiplier signal of the second harmonic as a function of $\theta$, experimental data are shown in point, while the line is only for eyes helping.}
 \label{spectrum2}
 \end{figure}
-The data are shown in figure \ref{spectrum2}, we can notice a dip around 15°, that is a maximum in the power of the second harmonic, i.e. the angle where phase matching is achieved.
+The data are shown in figure \ref{spectrum2}, we can notice a dip around 15°, that is a maximum in the power of the second harmonic, i.e. the angle where phase matching is achieved.\\
+Finally we measured the power of the second harmonic as a function of the polarizer angle, i.e. the power of the He-Ne laser as shown in this analysis. We fixed $\phi= 290$° and $\theta = 11$°, then we took the measurements with the same configurations of before and we evaluated the errors in the same way. The results are in figure \ref{polarization2}. There is a peak around 180° as expected, in fact at this angle the incident light has the maximum power as can be seen in figure \ref{polarizer}.
+\begin{figure}[H]
+\centering
+\includegraphics[width = \textwidth]{polarization2}
+\caption{Photomultiplier signal of the second harmonic as a function of polarizer angle, experimental data are shown in point, while the line is only for eyes helping.}
+\label{polarization2}
+\end{figure}
+\section{Summary and conclusion}
+In this experiment we used a Helium Neon laser to excite SHG inside a non linear crystal. First we checked the power of the source as a function of the polarizer angle and we found the expected cosine dependence. Then we studied the efficiency of the SGH process measuring its power as a function of the crystal angles. We obtained peaks in the power when the phase matching condition was achieved. This achievement is possible due to the birefringence of the crystal.
 
 \begin{thebibliography}{99}
   \bibitem{saleh}

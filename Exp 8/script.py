@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 
 from matplotlib.ticker import EngFormatter
 
+from scipy.special import jn
 def amplitude_modulation(mu,A,fc,fm,t):
 	return (1+mu*np.cos(2*np.pi*fm*t))*A*np.cos(2*np.pi*fc*t)
 
@@ -20,8 +21,9 @@ def display_peak(f,ch1,ax):
 	#text = r''
 	#for i in ch1[peaks1]:
 	#	text += str(i) + '\\'
-	plt.scatter(f[peaks1], ch1[peaks1], marker = 'x', color = 'r')
+	#plt.scatter(f[peaks1], ch1[peaks1], marker = 'x', color = 'r')
 	print( ch1[peaks1])
+	#print(f[peaks1])
 	#ax.text(335e3, -30, text, style='italic',
     #    bbox={'facecolor':'red', 'alpha':0.5, 'pad':10})
 	#plt.plot(f, ch1, color = 'k')
@@ -69,6 +71,119 @@ for i in range(1,7,2):
 	plot_data_and_fft(t,ch1,f,fft,AM_depth[int(np.floor(i/2))],freq[int(np.floor(i/2))])
 #plt.show()
 
+#4th amplitude
+t, ch1 = np.loadtxt('data/DATA07.CSV', delimiter = ',', skiprows = 1, unpack = True)
+f, fft = np.loadtxt('data/DATA08.CSV', delimiter = ',', skiprows = 1, unpack = True)
+
+plt.figure()
+
+plt.subplot(211)
+plt.plot(t, ch1)
+plt.xlabel("Time [s]")
+plt.ylabel("Voltage [V]")
+plt.xlim(-5e-5,5e-5)
+
+ax = plt.subplot(212)
+plt.plot(f, fft)
+plt.xlabel("Frequency [Hz]")
+plt.ylabel("FFT [dBm]")
+plt.axvline(x=625e3,linestyle ='--',color='#000000')
+plt.axvline(x=595e3,linestyle ='--',color='#000000')
+plt.axvline(x=655e3,linestyle ='--',color='#000000')
+plt.xlim(325e3,925e3)
+
+display_peak(f,fft,ax)
+
+
+#frequency modulation
+t, ch1 = np.loadtxt('data/DATA09.CSV', delimiter = ',', skiprows = 1, unpack = True)
+f, fft = np.loadtxt('data/DATA10.CSV', delimiter = ',', skiprows = 1, unpack = True)
+
+plt.figure()
+
+plt.subplot(211)
+plt.plot(t, ch1)
+plt.xlabel("Time [s]")
+plt.ylabel("Voltage [V]")
+plt.xlim(-4e-5,4e-5)
+plt.grid(True)
+
+ax = plt.subplot(212)
+plt.plot(f, fft)
+plt.xlabel("Frequency [Hz]")
+plt.ylabel("FFT [dBm]")
+plt.axvline(x=625e3,linestyle ='--',color='#000000')
+
+for n in range(1,4):
+	freq1 = 625e3 + n*50e3 
+	freq2 = 625e3 - n*50e3 
+	plt.axvline(x=freq1,linestyle ='--',color='#000000')
+	plt.axvline(x=freq2,linestyle ='--',color='#000000')
+plt.xlim(325e3,925e3)
+
+display_peak(f,fft,ax)
+
+
+t, ch1 = np.loadtxt('data/DATA12.CSV', delimiter = ',', skiprows = 1, unpack = True)
+f, fft = np.loadtxt('data/DATA13.CSV', delimiter = ',', skiprows = 1, unpack = True)
+
+plt.figure()
+
+plt.subplot(211)
+plt.plot(t, ch1)
+plt.xlabel("Time [s]")
+plt.ylabel("Voltage [V]")
+plt.xlim(-4e-5,4e-5)
+plt.grid(True)
+
+ax = plt.subplot(212)
+plt.plot(f, fft)
+plt.xlabel("Frequency [Hz]")
+plt.ylabel("FFT [dBm]")
+plt.axvline(x=625e3,linestyle ='--',color='#000000')
+
+for n in range(1,4):
+	freq1 = 625e3 + n*50e3 
+	freq2 = 625e3 - n*50e3 
+	plt.axvline(x=freq1,linestyle ='--',color='#000000')
+	plt.axvline(x=freq2,linestyle ='--',color='#000000')
+plt.xlim(325e3,925e3)
+
+display_peak(f,fft,ax)
+
+
+
+plt.figure()
+for n in range(0,4):
+	x = np.arange(0,4.5,0.01)
+	y = jn(n,x)
+	plt.plot(x,y,label= "n = "+str(n))
+	plt.grid()
+	plt.legend()
+mu = np.array([5,10,20,30,40,50,60,75,90,110,130,150,175,200])/50
+for i in mu:
+	plt.axvline(x=i,linestyle =':',color='#000000')
+	for n in range(0,4):
+		plt.plot(i, jn(n,i), 'r.',markersize=7)
+mustr = (mu*50)
+plt.xticks(mu,mustr)
+plt.xlabel("Frequency deviation [kHz]")
+plt.ylabel(r"$J_n(\mu)$")
+plt.xlim([0,4.1])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #Bode
@@ -114,4 +229,9 @@ formatter0 = EngFormatter(unit='Hz')
 ax2.xaxis.set_major_formatter(formatter0)
 
 
+
+time_delay = phase/(2*np.pi*f)
+print(time_delay)
+plt.figure()
+plt.plot(f,time_delay,'.')
 plt.show()

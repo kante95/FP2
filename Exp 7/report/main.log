@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.10.7)  12 NOV 2017 16:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.10.7)  17 NOV 2017 16:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -947,32 +947,39 @@ Package pdftex.def Info: ./img/spectrum2.png  used on input line 132. on input
 line 132.
 Package pdftex.def Info: Requested size: 418.25368pt x 192.28703pt on input lin
 e 132.
- [4 <./img/spectrum.png> <./img/spectrum2.png>] [5] (./main.aux) ) 
+<./img/polarization2.png, id=38, 987.2082pt x 453.8556pt>
+File: ./img/polarization2.png Graphic file (type png)
+<use ./img/polarization2.png>
+Package pdftex.def Info: ./img/polarization2.png  used on input line 140. on in
+put line 140.
+Package pdftex.def Info: Requested size: 418.25368pt x 192.28703pt on input lin
+e 140.
+ [4 <./img/spectrum.png> <./img/spectrum2.png>] [5 <./img/polarization2.png>] (
+./main.aux) ) 
 Here is how much of TeX's memory you used:
- 5983 strings out of 492990
- 86613 string characters out of 6138688
- 158355 words of memory out of 5000000
- 9404 multiletter control sequences out of 15000+600000
+ 5989 strings out of 492990
+ 86756 string characters out of 6138688
+ 158363 words of memory out of 5000000
+ 9409 multiletter control sequences out of 15000+600000
  11541 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,7n,41p,841b,285s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/t
-exmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmbx9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-csc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
-r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/cm
--super/sfrm1000.pfb>
-Output written on main.pdf (6 pages, 2435692 bytes).
+ 42i,7n,41p,865b,287s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<
+/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+i10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-
+dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on main.pdf (6 pages, 2465784 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
+ 91 PDF objects out of 1000 (max. 8388607)
  55 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -52,21 +52,21 @@ plt.ylabel("Voltage [V]")
 plt.legend()
 
 
-#close up of a maxium
-file = np.arange(36,53)
-mean = np.zeros(len(file))
-error = np.zeros(len(file))
-for i in range(len(file)):
-	t,v = read_oscilloscope_data("data/TEK00"+str(file[i]).zfill(2)+".CSV")
-	mean[i] = np.mean(v)
-	error[i] = np.std(v)/np.sqrt(len(v))
+#close up of a maxium - dabuttare
+# file = np.arange(36,53)
+# mean = np.zeros(len(file))
+# error = np.zeros(len(file))
+# for i in range(len(file)):
+# 	t,v = read_oscilloscope_data("data/TEK00"+str(file[i]).zfill(2)+".CSV")
+# 	mean[i] = np.mean(v)
+# 	error[i] = np.std(v)/np.sqrt(len(v))
 
-angles = np.arange(302,268,-2)
+# angles = np.arange(302,268,-2)
 
-plt.figure()
-plt.errorbar(angles,mean,yerr=error,xerr = np.full_like(error,2/np.sqrt(12)),fmt='.' )
-plt.xlabel("Angle [°]")
-plt.ylabel("Voltage [V]")
+# plt.figure()
+# plt.errorbar(angles,mean,yerr=error,xerr = np.full_like(error,2/np.sqrt(12)),fmt='.' )
+# plt.xlabel("Angle [°]")
+# plt.ylabel("Voltage [V]")
 
 
 
@@ -119,9 +119,10 @@ for i in range(len(file)):
 
 angles = np.arange(130,240,10)
 plt.figure()
-plt.errorbar(angles,mean,yerr=error,xerr = np.full_like(error,2/np.sqrt(12)),fmt='.' )
+plt.errorbar(angles,mean,yerr=error,xerr = np.full_like(error,2/np.sqrt(12)),fmt='.-',label="Experimental points"  )
 plt.xlabel("Angle [°]")
 plt.ylabel("Voltage [V]")
+plt.legend()
 
 plt.show()
 

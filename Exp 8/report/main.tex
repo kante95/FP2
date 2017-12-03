@@ -60,7 +60,7 @@ In this experiment we studied three different modulation techniques: amplitude, 
 \end{abstract}
 \section{Introduction}
 The experiment is divided in two parts. The aim of the first part is to study modulated signal in time and frequency domain. In order to fulfil this goal we used a very simple setup consisting of a frequency generator connected to an oscilloscope. We exploited the frequency generator features to create a modulated signal in amplitude, frequency and phase. 
-For the amplitude modulated signal we measured the wave for three different AM depths and another one with a different frequency. Frequency modulation was studied for ten different frequency deviations, we acquired the time signal for only two frequencies, for the rest we studied only the spectrum. Finally we took one measure of a phase modulated square wave signal both in time and frequency domain.\\
+For the amplitude modulated signal we measured the wave for three different AM depths and another one with a different frequency. Frequency modulation was studied for fourteen different frequency deviations, we acquired the time signal for only two frequencies, for the rest we studied only the spectrum. Finally we took one measure of a phase modulated square wave signal both in time and frequency domain.\\
 For the second part we created an amplitude modulated signal from two different function generators, then we converted this electric signal into a light one using an Acousto-Optical Modulator (AOM). The light signal was later detected and demodulated with a photodiode, whose signal was analysed with an oscilloscope. We studied the frequency response of this system and we tried to determine AOM's proprieties with the phase delay.
 \section{Theory}
 \subsection{Amplitude modulation}
@@ -89,15 +89,74 @@ where we recognized the integral representation of Bessel functions \cite{bessel
 we can use this equation in \eqref{complexform}, which yields to
 \[x(t) =  \text{Re}\left(A_c e^{i\omega_c t}\sum_{n=-\infty}^{+\infty }J_n(\mu) e^{i\omega_mn t}\right) =\text{Re}\left(A_c\sum_{n=-\infty}^{+\infty }J_n(\mu) e^{i(\omega_c +\omega_mn )t}\right).\]
 Finally we take the real part and we get
-\[x(t) = A_c \sum_{n=-\infty}^{+\infty }J_n(\mu) \cos((\omega_c +\omega_mn )t).\]
+\begin{equation}\label{finalfre}x(t) = A_c \sum_{n=-\infty}^{+\infty }J_n(\mu) \cos((\omega_c +\omega_mn )t).\end{equation}
 The Fourier transform is now straightforward, since it is linear. In the spectrum we will find symmetric peaks with respect to $f_c$ equally spaced by $f_m$. The heights of these peaks are proportional to Bessel functions.
 \subsection{Acousto-Optical Modulator}
-AOM is a device that can be used to turn an electric signal into a light one. Basically it is block of a certain material which undergoes to vibrations produced by a piezo-electric transducer. The electric signal is converted into sound waves which change the refractive index of the material such that a grating is formed. The incoming light diffracts due to this grating and the diffracted light changes its wavelength, intensity and phase. For our analysis it is important to focus on the phase whom the light acquire. From a bode diagram of the system it is possible to evaluate the sound speed inside the AOM from the acquired phase. Indeed the phase shift is to to the time needed from the sound wave to reach the light beam let us call this time $t$, and the distance that sound has to travel as $d$. Therefore, the velocity of sound is $v_s = d/t$, $d$ is a propriety of the device and can be obtained from the datasheet. $t$ can be measured from the phase shift which is in fact $\phi = t f_m$, therefore we expect from a bode diagram a linear dependence of the phase with the frequency.
+AOM is a device that can be used to turn an electric signal into a light one. Basically it is block of a certain material which undergoes to vibrations produced by a piezo-electric transducer. The electric signal is converted into sound waves which change the refractive index of the material such that a grating is formed. The incoming light diffracts due to this grating and the diffracted light changes its wavelength, intensity and phase. For our analysis it is important to focus on the phase whom the light acquire. From a bode diagram of the system it is possible to evaluate the sound speed inside the AOM from the acquired phase. Indeed the phase shift is to to the time needed from the sound wave to reach the light beam let us call this time $t$, and the distance that sound has to travel as $d$. Therefore, the velocity of sound is $v_s = d/t$, $d$ is a propriety of the device and can be obtained from the datasheet. $t$ can be measured from the phase shift which is in fact $\phi = 2\pi f_m t$, therefore we expect from a bode diagram a linear dependence of the phase with the frequency.
 \section{Experiment setup}
-
-
+For the first part of the experiment, the setup was very simple, it consisted in a function generator connected to an oscilloscope. Therefore, here we will discuss only the setup for the second part. It can be found in figure \ref{setup}. The transmission part, i.e. the laser is made with an Helium-Neon laser with an output of around 1 mW at 633 nm. The laser beam is focused, with the help of two mirrors, into an AOM. We blocked the zero-th order diffracted beam, and we with a lens we sent the first order in a photodiode. The signal is created with two function generator, one used as carrier, with the other one we generate the message to encode.
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{setup}
+\caption{Setup for the second part, between the mixer and a function generator there was also a resistor used to avoid short-circuiting}\label{setup}
+\end{figure}
 \section{Data analysis}
+\subsection{First part}
+\subsubsection{Amplitude modulation}
+First we studied amplitude modulation. We used as carrier a wave with amplitude $100$ mV peak-peak, and 625 kHz of frequency. We varied the frequency and the AM depth of the signal. Below we there are all four measurement in time domain and frequency, the frequency plot was obtained with the build-in fast Fourier transform (FFT) of the oscilloscope. In theory we should obtain infinite peaks, since they are Dirac deltas. However, in reality we obtained a broad peak, because the FFT is done with a finite number of points, and moreover we had to chose a window which cut the signal. All this issues lead to a spectrum leakage, that is we get broader peaks. Nevertheless, we can still do some analysis, the height of the peaks depends on the FFT algorithm, but it should be at least proportional to the AM depth we chose, as can be seen from the theoretical spectrum where Dirac deltas are proportional to $h$. Furthermore, we can also check the peak frequencies.
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{amp1}
+\caption{Message frequency 50 kHz, 100\% depth. Black dashed lines plotted at 575,625,675 kHz}\label{1}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{amp2}
+\caption{Message frequency 50 kHz, 50\% depth. Black dashed lines plotted at 575,625,675 kHz}\label{2}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{amp3}
+\caption{Message frequency 50 kHz, 10\% depth. Black dashed lines plotted at 575,625,675 kHz}\label{3}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{amp4}
+\caption{Message frequency 30 kHz, 100\% depth. Black dashed lines plotted at 595,625,655 kHz}\label{4}
+\end{figure}
+From the figures it is clear that the peaks are centred at the expected frequencies. We extracted the peaks from the data and summarized them in the following table
+\begin{table}[H]
+\centering
+\begin{tabular}{c|c|c|c|c}
+ Figure \# & left peak [dBm] & central peak [dBm]& right peak [dBm]& AM depth\\
+  \hline
+  \ref{1} & -29.4654 & -22.2054 & -29.4854 & 100\%\\
+  \hline
+  \ref{2} & -35.4854 & -22.2054 & -35.5254 & 50\%\\
+  \hline
+  \ref{3} & -49.3654 & -22.2054 & -49.4254 & 10\%\\
+  \hline
+  \ref{4} & -28.6454 & -22.2054 & -28.6454 & 100\%\\
+  \hline
+\end{tabular}
+\caption{Height of the three peaks showed in figures \ref{1}-\ref{4}, first column is a reference to the figure}
+\end{table}
+From this table we can notice two interesting behaviours. First of all the height of the central peak never change, this is expected. In fact the central peak is at the carrier frequency and therefore it represent the carrier wave, we never changed it, so this peak has not changed accordingly. Furthermore, we notice that the heights of the side peaks behave as predicted, they are proportional to the depth, if the AM depth decreases, the amplitude decreases as well. The height of the right peak is slightly greater than the left one, this is weird since they should have the same height. This behaviour can be probably explained as a systematic error introduces in the FFT algorithm or it could be due to the quantization of the frequency and therefore the algorithm to find the maximum fails. As further investigation it is possible to test different algorithms. Lastly, we see that the heights of the peaks associated with 100\% AM depth are slightly different, those measurements are made on signal of different frequency, respectively 50 and 30 kHz, therefore this difference could be explained as a different number of points involved in the FFT algorithm, since we did not change the time window used to perform the FFT.
+\subsubsection{Frequency modulation}
+The same analysis of the amplitude modulation, which we have just explained, was used in the analysis of the frequency and phase modulated signal. The carrier wave was the same as for the amplitude modulation. The message had a frequency of 50 kHz, and we changed the frequency deviation from 5 kHz to 200 kHz, with different steps. We report below only the two measurements for the frequency modulation where we acquired both the time and frequency domain. The remaining spectra do not add any further interesting feature. 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{freq1}
+\caption{Frequency deviation 5 kHz. Black dashed lines are plotted at $625\pm n50$ kHz for $n\in\{-3,-2,-1,0,1,2,3\}$}\label{freq1}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{freq2}
+\caption{Frequency deviation 10 kHz. Black dashed lines are plotted at $625\pm n50$ kHz for $n\in\{-3,-2,-1,0,1,2,3\}$}\label{freq2}
+\end{figure}
+We can see from figure \ref{freq1} and \ref{freq2} that the peaks relate to the first three terms of equation \eqref{finalfre} are clearly visible, the forth peak starts to become very low and difficult to distinguish from noise. The peaks are centred at the expected frequency. For analysing the peak height, which is related to Bessel functions, we plot in figure () the first three Bessel functions with the modulation index  $\mu = \displaystyle\frac{A_m f_\Delta }{f_m }$, for the fourteen different frequency deviations. 
 
+\subsection{Second part}
 
 \section{Summary and conclusion}
 
