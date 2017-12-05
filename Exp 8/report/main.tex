@@ -56,7 +56,7 @@
 
 \end{titlepage}
 \begin{abstract}
-In this experiment we studied three different modulation techniques: amplitude, frequency, and phasemodulation. In the first part we simply generated a modulated signal with a frequency generator and analysed it with an oscilloscope. In the second part of the experiment we constructed an amplitude modulated signal from two different frequency generators, converted it from an electric to a light signal with an Acousto-Optical Modulator (AOM) and demodulated with a photodiode before measuring it. Finally we studied the frequency response of our system.
+In this experiment we studied three different modulation techniques: amplitude, frequency, and phasemodulation. In the first part we simply generated a modulated signal with a frequency generator and analysed it with an oscilloscope. In the second part of the experiment we constructed an amplitude modulated signal from two different frequency generators, converted it from an electric to a light signal with an Acousto-Optical Modulator and demodulated with a photodiode before measuring it. Finally we studied the frequency response of our system.
 \end{abstract}
 \section{Introduction}
 The experiment is divided in two parts. The aim of the first part is to study modulated signal in time and frequency domain. In order to fulfil this goal we used a very simple setup consisting of a frequency generator connected to an oscilloscope. We exploited the frequency generator features to create a modulated signal in amplitude, frequency and phase. 
@@ -69,7 +69,12 @@ Amplitude modulation is a technique used to encode a message signal $m(t)$ into 
 In our experiment we used as message a cosine wave $m(t) = h\cos(\omega_m t)$, where $h$ is called modulation index. Usually $h$ is expressed as a percentage and in that case it is called AM depth.\\
 The spectrum of $x(t)$ can be calculated mathematically by performing a Fourier transform on the function, but first it is better if we rewrite equation \eqref{ammodulation} with prosthaphaeresis identities
 \[x(t) = A_c \cos(2\pi f_c t) + \frac{A_ch}{2}\left[\cos(2\pi(f_c + f_m)t)+\cos(2\pi(f_c - f_m)t)\right].\]
-Here the spectrum is evident, there is a peak at $f_c$ and two side peaks one on each side of $f_c$ spaced from the central peak by $f_m$, as depicted in figure.
+Here the spectrum is evident, there is a peak at $f_c$ and two side peaks one on each side of $f_c$ spaced from the central peak by $f_m$, as depicted in figure \ref{amtheory}
+\begin{figure}[H]
+\centering
+\includegraphics[width=.7\textwidth]{amtheory}
+\caption{Theoretical spectrum for positive frequency}\label{amtheory}
+\end{figure}
 \subsection{Frequency and phase modulation}
 Instead of encoding a message in the amplitude of a cosine carrier, we can encode it in the phase on in the frequency of such carrier. In the most general case $m(t)$ can be transmitted in the form
 \[x(t) = A_c \cos(2\pi f_ct + \phi(m(t))).\]
@@ -91,8 +96,18 @@ we can use this equation in \eqref{complexform}, which yields to
 Finally we take the real part and we get
 \begin{equation}\label{finalfre}x(t) = A_c \sum_{n=-\infty}^{+\infty }J_n(\mu) \cos((\omega_c +\omega_mn )t).\end{equation}
 The Fourier transform is now straightforward, since it is linear. In the spectrum we will find symmetric peaks with respect to $f_c$ equally spaced by $f_m$. The heights of these peaks are proportional to Bessel functions.
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{freqtheory}
+\caption{Theoretical spectrum for positive frequency and for different value of $\mu$}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=.7\textwidth]{besseltheory}
+\caption{First six Bessel functions}
+\end{figure}
 \subsection{Acousto-Optical Modulator}
-AOM is a device that can be used to turn an electric signal into a light one. Basically it is block of a certain material which undergoes to vibrations produced by a piezo-electric transducer. The electric signal is converted into sound waves which change the refractive index of the material such that a grating is formed. The incoming light diffracts due to this grating and the diffracted light changes its wavelength, intensity and phase. For our analysis it is important to focus on the phase whom the light acquire. From a bode diagram of the system it is possible to evaluate the sound speed inside the AOM from the acquired phase. Indeed the phase shift is to to the time needed from the sound wave to reach the light beam let us call this time $t$, and the distance that sound has to travel as $d$. Therefore, the velocity of sound is $v_s = d/t$, $d$ is a propriety of the device and can be obtained from the datasheet. $t$ can be measured from the phase shift which is in fact $\phi = 2\pi f_m t$, therefore we expect from a bode diagram a linear dependence of the phase with the frequency.
+AOM is a device that can be used to turn an electric signal into a light one. Basically it is a block of a certain material which undergoes to vibrations produced by a piezo-electric transducer. The electric signal is converted into sound waves which change the refractive index of the material such that a grating is formed. The incoming light diffracts on this grating and the diffracted light changes its wavelength, intensity and phase. For our analysis it is important to focus on the phase whom the light acquire. From a bode diagram of the system it is possible to evaluate the sound speed inside the AOM from the acquired phase. Indeed the phase shift is to to the time needed from the sound wave to reach the light beam let us call this time $t$, and the distance that sound has to travel as $d$. Therefore, the velocity of sound is $v_s = d/t$, $d$ is a propriety of the device and can be obtained from the datasheet. $t$ can be measured from the phase shift which is in fact $\phi = 2\pi f_m t$, therefore we expect from a bode diagram a linear dependence of the phase with the frequency.
 \section{Experiment setup}
 For the first part of the experiment, the setup was very simple, it consisted in a function generator connected to an oscilloscope. Therefore, here we will discuss only the setup for the second part. It can be found in figure \ref{setup}. The transmission part, i.e. the laser is made with an Helium-Neon laser with an output of around 1 mW at 633 nm. The laser beam is focused, with the help of two mirrors, into an AOM. We blocked the zero-th order diffracted beam, and we with a lens we sent the first order in a photodiode. The signal is created with two function generator, one used as carrier, with the other one we generate the message to encode.
 \begin{figure}[H]
@@ -195,9 +210,20 @@ For the second part of the experiment we analysed the frequency response of the 
 \includegraphics[width=\textwidth]{bode}
 \caption{Bode diagram, the upper plot shows $|H|$, while the lower one is the phase of $H$. Red points are experimental data, the error is displayed with a black line which is not always visible}\label{bode}
 \end{figure}
+At low frequency we have a limitation of the mixer, which has losses for frequency under $100$ kHz. Then the system works well until some MHz, where the signal is cut again. At higher frequencies there is a low pass filter behaviour, this is due to the demodulation of the signal where a low pass filter is needed.
+The phase difference is due to brief time that the sound wave takes to reach the laser beam inside the AOM. Indeed, the sound speed inside the AOM is finite and it takes a while for the sound to go from one side to the center of the devide, where it encounters the laser beam. Indeed, we can estimate the sound speed $v_s$, the phase accumulated is $\phi = 2\pi f_m t$. Therefore, since $t = d/v_s$, where d is the distance, we obtain $\phi = 2\pi f_m d/v_s$, but since the phase difference is measured only in multiple of $2\pi$, we actually have
+ \[\phi = 2\pi f_m d/v_s \mod 2\pi.\]
+In figure \ref{bode}, a jump can be observed indeed. However it is not clear the linear dependence of the phase, since the plot is in logarithmic scale. We can plot $t$ as a function of the frequency $t = \phi/2\pi f_m$ and should find an horizontal line, since the time should be always equal. 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{time}
+\caption{Time delay which cause our phase $\phi$ as a function of the frequency}\label{cazzo}
+\end{figure}
+This is not our case unfortunately as can be seen in figure \ref{cazzo}. Below 1 MHz, the time change significantly, which is not what we expected. It is possible that in that particular region of frequencies, another phase is introduced, likely due to the mixer, which does not work as it should be at low frequency.  Therefore it is not possible with our data to estimate the sound speed inside the AOM.
 
 \section{Summary and conclusion}
-
+In this experiment we studied three different kind of modulation: amplitude, frequency, and phase. First we focused our attention to the spectrum and we analysed the peaks. We did a qualitative analysis on such peaks, we could improve it by developing a more complete mathematical theory of spectral leakage. Just to give some insights, what we are doing during an FFT is basically multiplying the signal $x(t)$ by a window function $w(t)$, hence, instead of $x(t)$ we have the spectrum of $w(t)x(t)$. The Fourier transform of a multiplication in time can be written as a convolution in frequency, so we have $\mathcal{F}(w(t)x(t)) = \mathcal{F}(w(t))*\mathcal{F}(x(t))$, depending on the form of $w(t)$, this could be easy or not to work out analytically. When the theoretical spectrum is obtained, a fit could be done and it would be possible to compare the parameters of the fit with the values set on the function generator.\\
+In the last part of the experiment we build a setup which allowed us to transmit an amplitude modulated signal we studied the frequency response and we tried to explain the limitation of our setup. Lastly we have also tried to estimated the sound speed inside the AOM, but without success. The analysis done shows that at certain frequency, the phase introduced by our system is not what we would expect from the delay to the finite sound speed. Hence, it is possible that there are other phase in our system which we did not consider in our analysis. For instance a phase could be introduced by the mixer.
 
 \begin{thebibliography}{99}
 \bibitem{bessel}

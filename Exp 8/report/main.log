@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.21)  4 DEC 2017 17:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.21)  5 DEC 2017 16:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -892,149 +892,180 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 67.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1] [2]
-<./img/setup.png, id=34, 433.62pt x 359.81235pt>
-File: ./img/setup.png Graphic file (type png)
-<use ./img/setup.png>
-Package pdftex.def Info: ./img/setup.png  used on input line 100. on input line
- 100.
-Package pdftex.def Info: Requested size: 334.60422pt x 277.66577pt on input lin
-e 100.
- [3]
-<./img/amp1.png, id=38, 987.2082pt x 453.8556pt>
+)
+<./img/amtheory.png, id=13, 346.29375pt x 146.04562pt>
+File: ./img/amtheory.png Graphic file (type png)
+<use ./img/amtheory.png>
+Package pdftex.def Info: ./img/amtheory.png  used on input line 75. on input li
+ne 75.
+Package pdftex.def Info: Requested size: 292.77629pt x 123.47748pt on input lin
+e 75.
+ [1] [2 <./img/amtheory.png (PNG copy)>]
+<./img/freqtheory.png, id=35, 538.26094pt x 338.76563pt>
+File: ./img/freqtheory.png Graphic file (type png)
+<use ./img/freqtheory.png>
+Package pdftex.def Info: ./img/freqtheory.png  used on input line 101. on input
+ line 101.
+Package pdftex.def Info: Requested size: 334.60422pt x 210.59077pt on input lin
+e 101.
+<./img/besseltheory.png, id=36, 407.5225pt x 254.9525pt>
+File: ./img/besseltheory.png Graphic file (type png)
+<use ./img/besseltheory.png>
+Package pdftex.def Info: ./img/besseltheory.png  used on input line 106. on inp
+ut line 106.
+Package pdftex.def Info: Requested size: 292.77629pt x 183.17273pt on input lin
+e 106.
+ [3 <./img/freqtheory.png (PNG copy)>]
+<./img/setup.jpg, id=40, 443.475pt x 402.4125pt>
+File: ./img/setup.jpg Graphic file (type jpg)
+<use ./img/setup.jpg>
+Package pdftex.def Info: ./img/setup.jpg  used on input line 115. on input line
+ 115.
+Package pdftex.def Info: Requested size: 334.60422pt x 303.62003pt on input lin
+e 115.
+ [4 <./img/besseltheory.png>]
+<./img/amp1.png, id=45, 987.2082pt x 453.8556pt>
 File: ./img/amp1.png Graphic file (type png)
 <use ./img/amp1.png>
-Package pdftex.def Info: ./img/amp1.png  used on input line 109. on input line 
-109.
-Package pdftex.def Info: Requested size: 418.25368pt x 192.28703pt on input lin
-e 109.
-<./img/amp2.png, id=39, 987.2082pt x 453.8556pt>
-File: ./img/amp2.png Graphic file (type png)
-<use ./img/amp2.png>
-Package pdftex.def Info: ./img/amp2.png  used on input line 114. on input line 
-114.
-Package pdftex.def Info: Requested size: 418.25368pt x 192.28703pt on input lin
-e 114.
- [4 <./img/setup.png>]
-<./img/amp3.png, id=45, 987.2082pt x 453.8556pt>
-File: ./img/amp3.png Graphic file (type png)
-<use ./img/amp3.png>
-Package pdftex.def Info: ./img/amp3.png  used on input line 119. on input line 
-119.
-Package pdftex.def Info: Requested size: 418.25368pt x 192.28703pt on input lin
-e 119.
-<./img/amp4.png, id=46, 987.2082pt x 453.8556pt>
-File: ./img/amp4.png Graphic file (type png)
-<use ./img/amp4.png>
-Package pdftex.def Info: ./img/amp4.png  used on input line 124. on input line 
+Package pdftex.def Info: ./img/amp1.png  used on input line 124. on input line 
 124.
 Package pdftex.def Info: Requested size: 418.25368pt x 192.28703pt on input lin
 e 124.
- [5 <./img/amp1.png> <./img/amp2.png>] [6 <./img/amp3.png> <./img/amp4.png>]
-<./img/freq1.png, id=58, 987.2082pt x 453.8556pt>
+<./img/amp2.png, id=46, 987.2082pt x 453.8556pt>
+File: ./img/amp2.png Graphic file (type png)
+<use ./img/amp2.png>
+Package pdftex.def Info: ./img/amp2.png  used on input line 129. on input line 
+129.
+Package pdftex.def Info: Requested size: 418.25368pt x 192.28703pt on input lin
+e 129.
+
+[5 <./img/setup.jpg>]
+<./img/amp3.png, id=51, 987.2082pt x 453.8556pt>
+File: ./img/amp3.png Graphic file (type png)
+<use ./img/amp3.png>
+Package pdftex.def Info: ./img/amp3.png  used on input line 134. on input line 
+134.
+Package pdftex.def Info: Requested size: 418.25368pt x 192.28703pt on input lin
+e 134.
+<./img/amp4.png, id=52, 987.2082pt x 453.8556pt>
+File: ./img/amp4.png Graphic file (type png)
+<use ./img/amp4.png>
+Package pdftex.def Info: ./img/amp4.png  used on input line 139. on input line 
+139.
+Package pdftex.def Info: Requested size: 418.25368pt x 192.28703pt on input lin
+e 139.
+ [6 <./img/amp1.png> <./img/amp2.png>] [7 <./img/amp3.png> <./img/amp4.png>]
+<./img/freq1.png, id=64, 987.2082pt x 453.8556pt>
 File: ./img/freq1.png Graphic file (type png)
 <use ./img/freq1.png>
-Package pdftex.def Info: ./img/freq1.png  used on input line 149. on input line
- 149.
+Package pdftex.def Info: ./img/freq1.png  used on input line 164. on input line
+ 164.
 Package pdftex.def Info: Requested size: 418.25368pt x 192.28703pt on input lin
-e 149.
-<./img/freq2.png, id=59, 987.2082pt x 453.8556pt>
+e 164.
+<./img/freq2.png, id=65, 987.2082pt x 453.8556pt>
 File: ./img/freq2.png Graphic file (type png)
 <use ./img/freq2.png>
-Package pdftex.def Info: ./img/freq2.png  used on input line 154. on input line
- 154.
+Package pdftex.def Info: ./img/freq2.png  used on input line 169. on input line
+ 169.
 Package pdftex.def Info: Requested size: 418.25368pt x 192.28703pt on input lin
-e 154.
- [7 <./img/freq1.png>]
-<./img/bessel.png, id=64, 987.2082pt x 453.8556pt>
+e 169.
+ [8 <./img/freq1.png>]
+<./img/bessel.png, id=70, 987.2082pt x 453.8556pt>
 File: ./img/bessel.png Graphic file (type png)
 <use ./img/bessel.png>
-Package pdftex.def Info: ./img/bessel.png  used on input line 160. on input lin
-e 160.
+Package pdftex.def Info: ./img/bessel.png  used on input line 175. on input lin
+e 175.
 Package pdftex.def Info: Requested size: 501.90312pt x 230.74306pt on input lin
-e 160.
+e 175.
 
-Overfull \hbox (38.64938pt too wide) in paragraph at lines 160--161
+Overfull \hbox (38.64938pt too wide) in paragraph at lines 175--176
 [] [] 
  []
 
-<./img/freqdev75.png, id=65, 987.2082pt x 453.8556pt>
+<./img/freqdev75.png, id=71, 987.2082pt x 453.8556pt>
 File: ./img/freqdev75.png Graphic file (type png)
 <use ./img/freqdev75.png>
-Package pdftex.def Info: ./img/freqdev75.png  used on input line 166. on input 
-line 166.
-Package pdftex.def Info: Requested size: 418.25368pt x 192.28703pt on input lin
-e 166.
-[8 <./img/freq2.png> <./img/bessel.png>]
-<./img/freqdev90.png, id=71, 987.2082pt x 453.8556pt>
-File: ./img/freqdev90.png Graphic file (type png)
-<use ./img/freqdev90.png>
-Package pdftex.def Info: ./img/freqdev90.png  used on input line 171. on input 
-line 171.
-Package pdftex.def Info: Requested size: 418.25368pt x 192.28703pt on input lin
-e 171.
-<./img/freqdev150.png, id=72, 987.2082pt x 453.8556pt>
-File: ./img/freqdev150.png Graphic file (type png)
-<use ./img/freqdev150.png>
-Package pdftex.def Info: ./img/freqdev150.png  used on input line 176. on input
- line 176.
-Package pdftex.def Info: Requested size: 418.25368pt x 192.28703pt on input lin
-e 176.
- [9 <./img/freqdev75.png>]
-<./img/freqdev200.png, id=77, 987.2082pt x 453.8556pt>
-File: ./img/freqdev200.png Graphic file (type png)
-<use ./img/freqdev200.png>
-Package pdftex.def Info: ./img/freqdev200.png  used on input line 181. on input
- line 181.
+Package pdftex.def Info: ./img/freqdev75.png  used on input line 181. on input 
+line 181.
 Package pdftex.def Info: Requested size: 418.25368pt x 192.28703pt on input lin
 e 181.
- [10 <./img/freqdev90.png> <./img/freqdev150.png>]
-<./img/phase1.png, id=83, 987.2082pt x 453.8556pt>
+[9 <./img/freq2.png> <./img/bessel.png>]
+<./img/freqdev90.png, id=77, 987.2082pt x 453.8556pt>
+File: ./img/freqdev90.png Graphic file (type png)
+<use ./img/freqdev90.png>
+Package pdftex.def Info: ./img/freqdev90.png  used on input line 186. on input 
+line 186.
+Package pdftex.def Info: Requested size: 418.25368pt x 192.28703pt on input lin
+e 186.
+<./img/freqdev150.png, id=78, 987.2082pt x 453.8556pt>
+File: ./img/freqdev150.png Graphic file (type png)
+<use ./img/freqdev150.png>
+Package pdftex.def Info: ./img/freqdev150.png  used on input line 191. on input
+ line 191.
+Package pdftex.def Info: Requested size: 418.25368pt x 192.28703pt on input lin
+e 191.
+ [10 <./img/freqdev75.png>]
+<./img/freqdev200.png, id=83, 987.2082pt x 453.8556pt>
+File: ./img/freqdev200.png Graphic file (type png)
+<use ./img/freqdev200.png>
+Package pdftex.def Info: ./img/freqdev200.png  used on input line 196. on input
+ line 196.
+Package pdftex.def Info: Requested size: 418.25368pt x 192.28703pt on input lin
+e 196.
+ [11 <./img/freqdev90.png> <./img/freqdev150.png>]
+<./img/phase1.png, id=89, 987.2082pt x 453.8556pt>
 File: ./img/phase1.png Graphic file (type png)
 <use ./img/phase1.png>
-Package pdftex.def Info: ./img/phase1.png  used on input line 188. on input lin
-e 188.
+Package pdftex.def Info: ./img/phase1.png  used on input line 203. on input lin
+e 203.
 Package pdftex.def Info: Requested size: 418.25368pt x 192.28703pt on input lin
-e 188.
-<./img/bode.png, id=84, 987.2082pt x 453.8556pt>
+e 203.
+<./img/bode.png, id=90, 987.2082pt x 453.8556pt>
 File: ./img/bode.png Graphic file (type png)
 <use ./img/bode.png>
-Package pdftex.def Info: ./img/bode.png  used on input line 195. on input line 
-195.
+Package pdftex.def Info: ./img/bode.png  used on input line 210. on input line 
+210.
 Package pdftex.def Info: Requested size: 418.25368pt x 192.28703pt on input lin
-e 195.
- [11 <./img/freqdev200.png> <./img/phase1.png>] [12 <./img/bode.png>] (./main.a
-ux) ) 
+e 210.
+ [12 <./img/freqdev200.png> <./img/phase1.png>]
+<./img/time.png, id=97, 987.2082pt x 453.8556pt>
+File: ./img/time.png Graphic file (type png)
+<use ./img/time.png>
+Package pdftex.def Info: ./img/time.png  used on input line 219. on input line 
+219.
+Package pdftex.def Info: Requested size: 418.25368pt x 192.28703pt on input lin
+e 219.
+ [13 <./img/bode.png>] [14 <./img/time.png>] [15] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 6043 strings out of 492985
- 87434 string characters out of 6138637
- 156524 words of memory out of 5000000
- 9460 multiletter control sequences out of 15000+600000
+ 6064 strings out of 492985
+ 87869 string characters out of 6138637
+ 156546 words of memory out of 5000000
+ 9478 multiletter control sequences out of 15000+600000
  12118 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,11n,40p,1286b,283s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
-re/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.
-pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/
-share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmti10.pfb>
-Output written on main.pdf (13 pages, 2099130 bytes).
+ 42i,11n,40p,1286b,286s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmbx9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcs
+c10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.
+pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/shar
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on main.pdf (16 pages, 2126587 bytes).
 PDF statistics:
- 162 PDF objects out of 1000 (max. 8388607)
- 95 compressed objects within 1 object stream
+ 177 PDF objects out of 1000 (max. 8388607)
+ 101 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 
