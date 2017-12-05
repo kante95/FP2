@@ -153,36 +153,29 @@ display_peak(f,fft,ax)
 
 
 
-plt.figure()
+fig, ax1 = plt.subplots()
 for n in range(0,4):
 	x = np.arange(0,4.5,0.01)
 	y = jn(n,x)
-	plt.plot(x,y,label= "n = "+str(n))
-	plt.grid()
+	ax1.plot(x,y,label= "n = "+str(n))
+	#plt.grid()
 	plt.legend()
 mu = np.array([5,10,20,30,40,50,60,75,90,110,130,150,175,200])/50
 for i in mu:
-	plt.axvline(x=i,linestyle =':',color='#000000')
+	ax1.axvline(x=i,linestyle =':',color='#000000')
 	for n in range(0,4):
-		plt.plot(i, jn(n,i), 'r.',markersize=7)
+		ax1.plot(i, jn(n,i), 'r.',markersize=7)
 mustr = (mu*50)
-plt.xticks(mu,mustr)
-plt.xlabel("Frequency deviation [kHz]")
-plt.ylabel(r"$J_n(\mu)$")
-plt.xlim([0,4.1])
+#plt.xticks(mu,mustr)
+ax1.set_xlabel(r"$\mu$")
+ax1.set_ylabel(r"$J_n(\mu)$")
+ax1.set_xlim([0,4.3])
 
-
-
-
-
-
-
-
-
-
-
-
-
+ax2 = ax1.twiny()
+ax2.set_xlim(ax1.get_xlim())
+ax2.set_xticks(mu)
+ax2.set_xticklabels(mustr)
+ax2.set_xlabel(r"Frequency deviation $f_\Delta$ [kHz]")
 
 
 

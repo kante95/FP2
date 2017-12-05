@@ -143,7 +143,7 @@ From the figures it is clear that the peaks are centred at the expected frequenc
 \end{table}
 From this table we can notice two interesting behaviours. First of all the height of the central peak never change, this is expected. In fact the central peak is at the carrier frequency and therefore it represent the carrier wave, we never changed it, so this peak has not changed accordingly. Furthermore, we notice that the heights of the side peaks behave as predicted, they are proportional to the depth, if the AM depth decreases, the amplitude decreases as well. The height of the right peak is slightly greater than the left one, this is weird since they should have the same height. This behaviour can be probably explained as a systematic error introduces in the FFT algorithm or it could be due to the quantization of the frequency and therefore the algorithm to find the maximum fails. As further investigation it is possible to test different algorithms. Lastly, we see that the heights of the peaks associated with 100\% AM depth are slightly different, those measurements are made on signal of different frequency, respectively 50 and 30 kHz, therefore this difference could be explained as a different number of points involved in the FFT algorithm, since we did not change the time window used to perform the FFT.
 \subsubsection{Frequency modulation}
-The same analysis of the amplitude modulation, which we have just explained, was used in the analysis of the frequency and phase modulated signal. The carrier wave was the same as for the amplitude modulation. The message had a frequency of 50 kHz, and we changed the frequency deviation from 5 kHz to 200 kHz, with different steps. We report below only the two measurements for the frequency modulation where we acquired both the time and frequency domain. The remaining spectra do not add any further interesting feature. 
+The same analysis of the amplitude modulation, which we have just explained, was used in the analysis of the frequency and phase modulated signal. The carrier wave was the same as for the amplitude modulation. The message had a frequency of 50 kHz, and we changed the frequency deviation from 5 kHz to 200 kHz, with different steps. We report here only the two measurements for the frequency modulation where we acquired both the time and frequency domain. We will show later some of the remaining spectra which have the most interesting features.
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{freq1}
@@ -154,9 +154,47 @@ The same analysis of the amplitude modulation, which we have just explained, was
 \includegraphics[width=\textwidth]{freq2}
 \caption{Frequency deviation 10 kHz. Black dashed lines are plotted at $625\pm n50$ kHz for $n\in\{-3,-2,-1,0,1,2,3\}$}\label{freq2}
 \end{figure}
-We can see from figure \ref{freq1} and \ref{freq2} that the peaks relate to the first three terms of equation \eqref{finalfre} are clearly visible, the forth peak starts to become very low and difficult to distinguish from noise. The peaks are centred at the expected frequency. For analysing the peak height, which is related to Bessel functions, we plot in figure () the first three Bessel functions with the modulation index  $\mu = \displaystyle\frac{A_m f_\Delta }{f_m }$, for the fourteen different frequency deviations. 
-
+We can see from figure \ref{freq1} and \ref{freq2} that the peaks relate to the first three terms of equation \eqref{finalfre} are clearly visible, the forth peak starts to become very low and difficult to distinguish from noise. The peaks are centred at the expected frequency.
+\begin{figure}[H]
+%\centering
+\hspace{-4.5em}\includegraphics[width=1.2\textwidth]{bessel}
+\caption{First four Bessel functions plotted as a function on $\mu$, the upper scale is $\mu$ scaled with respect to the frequency deviation $f_\Delta$. The black dashed lines are the fourteen measurements we took}\label{bessel}
+\end{figure}
+For analysing the peak height, which is related to Bessel functions, we plot in figure \ref{bessel} the first four Bessel functions with the modulation index  $\mu = \displaystyle\frac{A_m f_\Delta }{f_m }$. From this figure we can draw interesting conclusion, for instance, the central peak, i.e. the peak corresponding to $n=0$ is higher then the other for frequency deviations up to $\simeq 70$ kHz, for our measurement at 75 kHz, the central peak starts to become smaller than the second peak $n=1$ as can be barely seen in figure \ref{freqdev75}. The height difference is more pronounced at $f_\Delta = 90$ kHz, where the peak relative to $n=1$ is higher then the central peak. At $f_\Delta = 150$ kHz, we have another behaviour, the peak corresponding to $n=2$ is higher then the peak for $n=1$ and even higher then the central peak which is now the lowest one. This can be seen in figure  \ref{freqdev150}. And finally for $f_\Delta = 200$ kHz, the peak for $n=3$ is now the higher then the peaks for $n=1$ and $n=2$, the central peak is now similar to $n=3$, because, although the Bessel function is negative, what it is important for the FFT is the square of the absolute value. Below there are the plots of the acquired spectra that we have just discussed.
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{freqdev75}
+\caption{Frequency deviation 70 kHz. Black dashed lines are plotted at $625\pm n50$ kHz for $n\in\{-3,-2,-1,0,1,2,3\}$}\label{freqdev75}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{freqdev90}
+\caption{Frequency deviation 90 kHz. Black dashed lines are plotted at $625\pm n50$ kHz for $n\in\{-3,-2,-1,0,1,2,3\}$}\label{freqdev90}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{freqdev150}
+\caption{Frequency deviation 150 kHz. Black dashed lines are plotted at $625\pm n50$ kHz for $n\in\{-3,-2,-1,0,1,2,3\}$}\label{freqdev150}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{freqdev200}
+\caption{Frequency deviation 200 kHz. Black dashed lines are plotted at $625\pm n50$ kHz for $n\in\{-3,-2,-1,0,1,2,3\}$}\label{freqdev200}
+\end{figure}
+\subsubsection{Phase modulation}
+Phase modulation is very similar to frequency modulation as already said, therefore we acquired only one measurement for a phase modulated signal. We used the same carrier as for amplitude and frequency modulation, for message we used a square wave of frequency 50 kHz. The plot is in figure \ref{phase}. We can notice the sudden change in the phase of the wave, which correspond to the square wave switching from low to high. The spectrum is very populated due to the square wave which has a lot of frequencies when written in Fourier series. The peaks are as expected spaced by 50 kHz. A more quantitative analysis could be done if we calculate the theoretical spectrum of this signal.
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{phase1}
+\caption{Phase modulated signal}\label{phase}
+\end{figure}
 \subsection{Second part}
+For the second part of the experiment we analysed the frequency response of the system in figure \ref{setup}.Therefore, we measured the bode diagram of the system, i.e. the complex quantity $H = V_{out}/V_{in}$, where both $V_{out}$ and $V_{in}$ were measured with the same oscilloscope. $V_{out}$ is the electric signal of the photodiode, while $V_{in}$ is the output of one function generator (the function generator that was the message, while the other one was the carrier). The complex numbers $H$ were measured by taking the amplitude of the signals and their phase difference calculated with the oscilloscope. The error is calculated as the difference between the maximum and minimum value divided by two.
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{bode}
+\caption{Bode diagram, the upper plot shows $|H|$, while the lower one is the phase of $H$. Red points are experimental data, the error is displayed with a black line which is not always visible}\label{bode}
+\end{figure}
 
 \section{Summary and conclusion}
 
@@ -166,10 +204,7 @@ We can see from figure \ref{freq1} and \ref{freq2} that the peaks relate to the 
 \textsc{Temme, Nico M.}, \textit{Special functions: an introduction to the classical functions of mathematical physics}, (2. print. ed.). New York 1996, Wiley. pp. 228–231. 
  \bibitem{signaltheory}
  http://www.commsys.isy.liu.se/TSDT03/material/ch5-2007.pdf
- \bibitem{saleh}
-  \textsc{Bahaa E. A. Saleh, Malvin Carl Teich}, \textit{Fundamentals of photonics}, Wiley series in pure and applied optics, 1991, 1st edition
-
 \bibitem{skriptum}
-Fortgeschrittenenpraktikum 2, \textit{Experiment FP2-07: Nonlinear Optics - Second Harmonic Generation}. \textsc{Slava M. Tzanova, Klemens Schuppert}.
+Fortgeschrittenenpraktikum 2, \textit{Excercise FP2-08: Amplitude and phase modulation}.
 \end{thebibliography}
 \end{document}
