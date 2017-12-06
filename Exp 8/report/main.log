@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.21)  5 DEC 2017 16:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.21)  6 DEC 2017 12:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1039,11 +1039,11 @@ e 219.
 Here is how much of TeX's memory you used:
  6064 strings out of 492985
  87869 string characters out of 6138637
- 156546 words of memory out of 5000000
+ 156547 words of memory out of 5000000
  9478 multiletter control sequences out of 15000+600000
  12118 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,11n,40p,1286b,286s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,11n,40p,1241b,286s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/a
@@ -1062,7 +1062,7 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (16 pages, 2126587 bytes).
+Output written on main.pdf (16 pages, 2126461 bytes).
 PDF statistics:
  177 PDF objects out of 1000 (max. 8388607)
  101 compressed objects within 2 object streams
