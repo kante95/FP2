@@ -1,0 +1,83 @@
+\documentclass[a4paper,10pt]{article} 
+
+\usepackage[utf8]{inputenc} 
+%\usepackage[T1]{fontenc}
+
+\usepackage{textcomp}           % Extra Symbole (Grad Celsius etc.)
+\usepackage{amssymb,amsmath}    % Schöne Formeln (AMS = American Mathematical Society)
+\usepackage{graphicx}           % Bilder und Seitenränder
+\usepackage{subcaption}			% captions for subfigures
+\usepackage{booktabs}           % Schönere Tabellen
+\usepackage{colortbl}           % Farbige Tabellen
+
+%\usepackage{tcolorbox}			% schöne bunte Boxen
+\usepackage{mathtools}			% \mathclap für ordentliche \underbrace-			environments
+\usepackage{geometry}			% Pagelayout mit \newgeometry, \restoregeometry
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{braket}
+\usepackage{caption}
+
+\graphicspath{{./img/}}
+
+
+\bibliographystyle{unsrtnat}
+
+\renewcommand{\k}{\mathbf{k}}
+\begin{document}
+\begin{titlepage}
+ \begin{center}
+	\Large{Advanced laboratory class 2}
+	\end{center}
+	\begin{center}
+	 \LARGE{\textbf{FP2 - Photometric measurements of the dissociation of manganese oxalate}}
+	\end{center}
+	
+	\begin{center}
+	
+	\large Marco \textsc{Canteri} \\
+	marco.canteri@student.uibk.ac.at\\
+	\large Johannes \textsc{Willi} \\
+	johannes.willi@student.uibk.ac.at
+	\end{center}
+	
+	\begin{center}
+	\vspace{1cm}
+	Innsbruck, \today
+	\vspace{2cm}
+	\end{center}
+	
+	\begin{center}
+	\includegraphics[scale=0.4]{img/uibk} 
+	\end{center}
+
+\end{titlepage}
+\begin{abstract}
+In this experiment we measured the dissociation rate constants of manganese oxalate at three different temperatures by means of photometric measurements. We monitored the absorption of the solution for 20 minutes in order to extract the dissociation rate. Moreover, we estimated the activation energy and the frequency factor of the dissociation.
+\end{abstract}
+\section{Introduction and theory}
+Photometric measurements provide a great tool to study chemical reaction, since it is possible to measure concentrations of a solution during a reaction. Therefore it is possible to study the time evolution and the speed of a chemical reaction. In this work we took advantage of this method and we studied the dissociation of manganese(III) oxalate. We determined the reaction rate of the dissociation for three different temperature by monitoring the reaction for around 20 minutes. We measured the absorption of the solution and we related the intensity of the laser with the concentration of manganese(III) oxalate, which allowed us to study the speed of such reaction. Furthermore, we studied the energy activation of the reaction and the frequency factor from the Arrhenius equation.\\
+The intensity of the absorbed light is given by the Lamber-Beer law
+\[I = I_0 10^{-\varepsilon c d },\]
+where $I_0$ is the intensity before the absorption, $\varepsilon$ is the molar absorption coefficient, $c$ is the concentration, and $d$ is the length of optical path.
+\section{Experiment setup and procedure}
+The experiment setup is quite simple, it consisted of 
+
+\section{Data analysis}
+\section{Summary and conclusion}
+
+ \begin{thebibliography}{99}
+
+  \bibitem{bellpaper}
+     \textsc{J. Bell}, \textit{On the Einstein Podolsky Rosen paradox}, Physics, 1 (1964), pp. 195–200.
+
+  \bibitem{inequality}
+   \textsc{J. F. Clauser, M. A. Horne, A. Shimony und R. A. Holt}, \textit{Proposed experiment to
+test local hidden-variable theories}, Phys. Rev. Lett., 23 (1969), pp. 880–884.
+
+\bibitem{skriptum}
+Fortgeschrittenenpraktikum 2, \textit{Entanglement and Bell’s inequality}. \textsc{Gregor Weihs, Kaisa Laiho, Harishankar Jayakumar}. WS 2015/16
+\end{thebibliography}
+\end{document}
