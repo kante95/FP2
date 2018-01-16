@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="setup.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker6993"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path6995"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.4) rotate(180) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Mstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4449"
+         style="fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.6) translate(0,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4443"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) translate(1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker6689"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path6691"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker6595"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path6597"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Send"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker6275"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path6277"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#ff9900;stroke-width:1pt;stroke-opacity:1;fill:#ff9900;fill-opacity:1"
+         transform="scale(0.2) rotate(180) translate(6,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Sstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Sstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4437"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1;fill:#ffffff;fill-opacity:1"
+         transform="scale(0.2) translate(6,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker5959"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mstart">
+      <path
+         transform="scale(0.6) translate(0,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#ffffff;stroke-opacity:1;fill:#ffffff;fill-opacity:1"
+         id="path5961" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker5871"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Send">
+      <path
+         transform="scale(0.2) rotate(180) translate(6,0)"
+         style="fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1;fill:#ffffff;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path5873" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker5707"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend">
+      <path
+         transform="scale(0.4) rotate(180) translate(10,0)"
+         style="fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1;fill:#ffffff;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path5709" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker5409"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path5411"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1;fill:#ffffff;fill-opacity:1"
+         transform="scale(0.4) rotate(180) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4431"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.4) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mend"
+       style="overflow:visible;"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path4434"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.4) rotate(180) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Send"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Send"
+       style="overflow:visible;"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path4440"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#ff9900;stroke-width:1pt;stroke-opacity:1;fill:#ff9900;fill-opacity:1"
+         transform="scale(0.2) rotate(180) translate(6,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path4428"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1;fill:#ffffff;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4425"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="337.07722"
+     inkscape:cy="777.27878"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="996"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       y="302.16034"
+       x="226.11798"
+       height="36.755371"
+       width="144.61252"
+       id="rect4140"
+       style="opacity:1;fill:#bfbfbf;fill-opacity:1;stroke:#808080;stroke-width:1.67319667;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <g
+       id="g4398"
+       transform="translate(145.08316,45.583134)"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <rect
+         style="opacity:1;fill:#bfbfbf;fill-opacity:1;stroke:#808080;stroke-width:1.16696489;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4138"
+         width="90.118744"
+         height="28.690176"
+         x="105.48235"
+         y="305.47867" />
+      <flowRoot
+         transform="translate(80.184575,-47.895589)"
+         style="color:#000000;line-height:125%;letter-spacing:0px;word-spacing:0px;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+         id="flowRoot4146"
+         xml:space="preserve"><flowRegion
+           id="flowRegion4148"><rect
+             y="360.21936"
+             x="31.428572"
+             height="19.99999"
+             width="79.999992"
+             id="rect4150" /></flowRegion><flowPara
+           id="flowPara4152">Power meter</flowPara></flowRoot>    </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4154"
+       style="color:#000000;line-height:125%;letter-spacing:0px;word-spacing:0px;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       transform="translate(87.709957,-37.752731)"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><flowRegion
+         id="flowRegion4156"><rect
+           id="rect4158"
+           width="135"
+           height="30.714285"
+           x="152.14285"
+           y="350.21936" /></flowRegion><flowPara
+         id="flowPara4160">50/50 beam splitter</flowPara></flowRoot>    <g
+       id="g4186"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <rect
+         style="opacity:1;fill:#cc0000;fill-opacity:0.76527333;stroke:#cc0000;stroke-width:1.09958684;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4172"
+         width="69.47184"
+         height="33.04327"
+         x="569.08807"
+         y="323.34055" />
+      <flowRoot
+         xml:space="preserve"
+         id="flowRoot4174"
+         style="color:#000000;line-height:125%;letter-spacing:0px;word-spacing:0px;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+         transform="translate(95,66.428571)"><flowRegion
+           id="flowRegion4176"><rect
+             id="rect4178"
+             width="112.85714"
+             height="27.142857"
+             x="487.14285"
+             y="265.21936" /></flowRegion><flowPara
+           id="flowPara4180">Laser 2</flowPara></flowRoot>      <path
+         inkscape:connector-curvature="0"
+         id="path4182"
+         d="m 568.46335,339.69958 -43.18403,0"
+         style="fill:#cc0000;fill-rule:evenodd;stroke:#cc0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       id="g4194"
+       transform="translate(0.75761441,26.011428)"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <rect
+         y="258.34055"
+         x="568.12122"
+         height="33.04327"
+         width="69.47184"
+         id="rect4142"
+         style="opacity:1;fill:#3366cc;fill-opacity:1;stroke:#003399;stroke-width:1.09958684;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <flowRoot
+         transform="translate(94.285714,1.4285714)"
+         style="color:#000000;line-height:125%;letter-spacing:0px;word-spacing:0px;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+         id="flowRoot4164"
+         xml:space="preserve"><flowRegion
+           id="flowRegion4166"><rect
+             y="265.21936"
+             x="487.14285"
+             height="27.142857"
+             width="112.85714"
+             id="rect4168" /></flowRegion><flowPara
+           id="flowPara4170">Laser 1</flowPara></flowRoot>      <path
+         style="fill:#003399;fill-rule:evenodd;stroke:#003399;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 568.46335,275.69958 -43.18403,0"
+         id="path4184"
+         inkscape:connector-curvature="0" />
+    </g>
+    <rect
+       y="289.0694"
+       x="465.42151"
+       height="63.442707"
+       width="59.871277"
+       id="rect4202"
+       style="opacity:1;fill:#bfbfbf;fill-opacity:1;stroke:#808080;stroke-width:1.41443741;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4204"
+       style="color:#000000;line-height:125%;letter-spacing:0px;word-spacing:0px;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       transform="translate(-3.5714286,2)"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><flowRegion
+         id="flowRegion4206"><rect
+           id="rect4208"
+           width="76.428574"
+           height="60"
+           x="460.71429"
+           y="295.21936" /></flowRegion><flowPara
+         id="flowPara4210"
+         style="text-align:center;text-anchor:middle">10/90</flowPara><flowPara
+         id="flowPara4212"
+         style="text-align:center;text-anchor:middle">fiber</flowPara><flowPara
+         id="flowPara4214"
+         style="text-align:center;text-anchor:middle">switch</flowPara></flowRoot>    <rect
+       y="190.41734"
+       x="586.62653"
+       height="35.318226"
+       width="50.318222"
+       id="rect4233"
+       style="opacity:1;fill:#bfbfbf;fill-opacity:1;stroke:#808080;stroke-width:0.96748823;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4235"
+       style="color:#000000;line-height:125%;letter-spacing:0px;word-spacing:0px;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       transform="translate(-5,-7.8571429)"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><flowRegion
+         id="flowRegion4237"><rect
+           id="rect4239"
+           width="55.714287"
+           height="35.714287"
+           x="587.85712"
+           y="200.21935" /></flowRegion><flowPara
+         id="flowPara4241"
+         style="text-align:center;text-anchor:middle">wave</flowPara><flowPara
+         id="flowPara4243"
+         style="text-align:center;text-anchor:middle">meter</flowPara></flowRoot>    <g
+       id="g4259"
+       transform="translate(-4.6428572,-2.5)"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <rect
+         y="185.96486"
+         x="465.03119"
+         height="51.723198"
+         width="66.72319"
+         id="rect4247"
+         style="opacity:1;fill:#bfbfbf;fill-opacity:1;stroke:#808080;stroke-width:1.34823227;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <flowRoot
+         transform="translate(-12.642857,-8.2142857)"
+         style="color:#000000;line-height:125%;letter-spacing:0px;word-spacing:0px;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+         id="flowRoot4249"
+         xml:space="preserve"><flowRegion
+           id="flowRegion4251"><rect
+             y="195.93364"
+             x="470.71429"
+             height="65.357147"
+             width="80.357162"
+             id="rect4253" /></flowRegion><flowPara
+           style="text-align:center;text-anchor:middle"
+           id="flowPara4255">multi-channel</flowPara><flowPara
+           style="text-align:center;text-anchor:middle"
+           id="flowPara4257">switcher</flowPara></flowRoot>    </g>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.98372412px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Lstart)"
+       d="m 584.16881,209.14792 -57.02595,0"
+       id="path4267"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#003399;fill-rule:evenodd;stroke:#003399;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 502.85714,288.43363 0,-52.5"
+       id="path4269"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4271"
+       d="m 486.85714,288.43363 0,-52.5"
+       style="fill:#cc0000;fill-rule:evenodd;stroke:#cc0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="opacity:1;fill:#bfbfbf;fill-opacity:1;stroke:#808080;stroke-width:0.96748823;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4282"
+       width="50.318222"
+       height="35.318226"
+       x="396.21277"
+       y="303.04935"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4284"
+       style="color:#000000;line-height:125%;letter-spacing:0px;word-spacing:0px;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       transform="translate(52.507627,-0.50507632)"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><flowRegion
+         id="flowRegion4286"><rect
+           id="rect4288"
+           width="34.345188"
+           height="21.213203"
+           x="354.56354"
+           y="311.92038" /></flowRegion><flowPara
+         id="flowPara4290">amp.</flowPara></flowRoot>    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 446.9925,321.01176 18.18275,0"
+       id="path4292"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 396.48487,320.50669 -24.74873,0"
+       id="path4294"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="opacity:1;fill:#99cc33;fill-opacity:1;stroke:#669900;stroke-width:1.05297768;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4144"
+       width="160.81831"
+       height="13.089877"
+       x="92.623993"
+       y="-300.77087"
+       transform="matrix(0,1,-1,0,0,0)"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#ff9900;fill-rule:evenodd;stroke:#ff9900;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 294.43916,254.3417 0,-162.129494"
+       id="path4298"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4300"
+       style="color:#000000;line-height:125%;letter-spacing:0px;word-spacing:0px;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       transform="translate(-12.12183,-48.487323)"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><flowRegion
+         id="flowRegion4302"><rect
+           id="rect4304"
+           width="92.428955"
+           height="39.39595"
+           x="316.17773"
+           y="211.91528" /></flowRegion><flowPara
+         id="flowPara4306">probe tube</flowPara></flowRoot>    <rect
+       style="opacity:1;fill:#bfbfbf;fill-opacity:1;stroke:#808080;stroke-width:1.01333952;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4330"
+       width="55.272369"
+       height="35.272373"
+       x="266.70123"
+       y="254.43703"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4332"
+       style="color:#000000;line-height:125%;letter-spacing:0px;word-spacing:0px;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       transform="translate(-19.357143,-5.7142857)"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><flowRegion
+         id="flowRegion4334"><rect
+           id="rect4336"
+           width="68.185295"
+           height="39.901024"
+           x="278.80209"
+           y="261.91785" /></flowRegion><flowPara
+         id="flowPara4338"
+         style="text-align:center;text-anchor:middle">THz</flowPara><flowPara
+         id="flowPara4340"
+         style="text-align:center;text-anchor:middle">antenna</flowPara></flowRoot>    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.02255547px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 294.28571,301.64792 0,-11.57651"
+       id="path4342"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="opacity:1;fill:#bfbfbf;fill-opacity:1;stroke:#808080;stroke-width:0.96748823;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4344"
+       width="50.318222"
+       height="35.318226"
+       x="269.9437"
+       y="57.077206"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4346"
+       style="color:#000000;line-height:125%;letter-spacing:0px;word-spacing:0px;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       transform="translate(-6.0609152,-5.0507627)"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><flowRegion
+         id="flowRegion4348"><rect
+           id="rect4350"
+           width="39.901012"
+           height="31.819805"
+           x="279.30719"
+           y="64.433014" /></flowRegion><flowPara
+         id="flowPara4352"
+         style="text-align:center;text-anchor:middle">Golay cell</flowPara></flowRoot>    <rect
+       style="opacity:1;fill:#bfbfbf;fill-opacity:1;stroke:#808080;stroke-width:1.32048583;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4356"
+       width="78.754578"
+       height="42.036293"
+       x="338.30554"
+       y="199.68521"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4358"
+       style="color:#000000;line-height:125%;letter-spacing:0px;word-spacing:0px;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       transform="translate(-1.0101525,1.0101525)"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><flowRegion
+         id="flowRegion4360"><rect
+           id="rect4362"
+           width="68.185295"
+           height="36.870567"
+           x="344.9671"
+           y="203.83406" /></flowRegion><flowPara
+         id="flowPara4364"
+         style="text-align:center;text-anchor:middle">function</flowPara><flowPara
+         id="flowPara4366"
+         style="text-align:center;text-anchor:middle">generator</flowPara></flowRoot>    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.01676762px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 385.3732,198.7833 0,-108.086319"
+       id="path4368"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 321.73359,74.029464 26.76904,0"
+       id="path4370"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="opacity:1;fill:#bfbfbf;fill-opacity:1;stroke:#808080;stroke-width:1.22583842;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4372"
+       width="81.374603"
+       height="35.059875"
+       x="348.86478"
+       y="56.701305"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4374"
+       style="color:#000000;line-height:125%;letter-spacing:0px;word-spacing:0px;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       transform="translate(-0.505076,-3.0304576)"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><flowRegion
+         id="flowRegion4376"><rect
+           id="rect4378"
+           width="70.71067"
+           height="33.335033"
+           x="352.54324"
+           y="60.89748" /></flowRegion><flowPara
+         id="flowPara4380"
+         style="text-align:center;text-anchor:middle">lock-in</flowPara><flowPara
+         id="flowPara4382"
+         style="text-align:center;text-anchor:middle">amplifier</flowPara></flowRoot>    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 430.83006,74.53454 23.23351,0 0,59.599 21.2132,0"
+       id="path4384"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="opacity:1;fill:#bfbfbf;fill-opacity:1;stroke:#808080;stroke-width:1.38210845;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4386"
+       width="94.350327"
+       height="38.439137"
+       x="476.72723"
+       y="115.87337"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4405"
+       d="m 294.52493,350.63777 0,-11.07143"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4413"
+       style="color:#000000;line-height:125%;letter-spacing:0px;word-spacing:0px;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       transform="matrix(0,-1,1,0,561.18254,874.06199)"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><flowRegion
+         id="flowRegion4415"><rect
+           id="rect4417"
+           width="77.781708"
+           height="17.677673"
+           x="567.20068"
+           y="95.747742" /></flowRegion><flowPara
+         id="flowPara4419">stabilization</flowPara></flowRoot>    <path
+       style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:0.95523566px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="m 655.89286,300.04077 -15.1536,0"
+       id="path4819"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.98478866px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 321.73739,274.54848 64.15229,0 0,-32.33248"
+       id="path5365"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5367"
+       style="color:#000000;line-height:125%;letter-spacing:0px;word-spacing:0px;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><flowRegion
+         id="flowRegion5369"><rect
+           id="rect5371"
+           width="87.88327"
+           height="31.819805"
+           x="479.82245"
+           y="118.98125" /></flowRegion><flowPara
+         id="flowPara5373"
+         style="text-anchor:middle;text-align:center">PC w/ Labview program</flowPara></flowRoot>    <path
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#808080;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 229.8097,97.768049 0,39.901021 57.07362,0"
+       id="path5375"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <g
+       id="g6567"
+       transform="translate(0.29536757,0.12626906)"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#808080;stroke-width:10.4965229;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 224.00132,233.83534 62.882,0"
+         id="path5385"
+         inkscape:connector-curvature="0" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:#ff9900;fill-rule:evenodd;stroke:#ff9900;stroke-width:2.53383565;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Send)"
+         d="m 224.00132,234.08787 58.36957,0"
+         id="path5387"
+         inkscape:connector-curvature="0" />
+    </g>
+    <path
+       style="fill:#ff9900;fill-rule:evenodd;stroke:#ff9900;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 286.63079,137.66907 -56.31601,0"
+       id="path6271"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff9900;stroke-width:2.44824028;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6275)"
+       d="m 229.55717,138.93177 0,-37.29716"
+       id="path6273"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot6571"
+       style="color:#000000;line-height:125%;letter-spacing:0px;word-spacing:0px;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><flowRegion
+         id="flowRegion6573"><rect
+           id="rect6575"
+           width="58.083771"
+           height="17.172594"
+           x="223.74879"
+           y="208.37975" /></flowRegion><flowPara
+         id="flowPara6577">inflow</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot6579"
+       style="color:#000000;line-height:125%;letter-spacing:0px;word-spacing:0px;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       transform="translate(-36.365492,71.720831)"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><flowRegion
+         id="flowRegion6581"><rect
+           id="rect6583"
+           width="118.69291"
+           height="53.538094"
+           x="202.0305"
+           y="70.493927" /></flowRegion><flowPara
+         id="flowPara6585"
+         style="text-align:center;text-anchor:middle">outflow </flowPara><flowPara
+         style="text-align:center;text-anchor:middle"
+         id="flowPara6587">(to vacuum pump)</flowPara></flowRoot>    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 637.15372,208.37975 19.1929,0 0,133.59268"
+       id="path6989"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker6993)"
+       d="m 656.34662,341.46735 -14.89976,0"
+       id="path6991"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="F:\Dropbox\FP2_shared\THz spectroscopy\report\img\setup.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+  </g>
+</svg>

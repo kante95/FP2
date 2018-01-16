@@ -4,6 +4,8 @@ from scipy.optimize import curve_fit
 from scipy.integrate import simps
 
 import matplotlib.pyplot as plt
+plt.rcParams['font.size'] = 16
+
 
 def find_maximum(f,intensity):
 	maxima = argrelextrema(intensity, np.greater)
@@ -92,8 +94,7 @@ for temp in degrees:
 	perr = np.sqrt(np.diag(pcov))
 	k[ind(temp)] = popt[0]
 	dk[ind(temp)] = perr[0]
-	print(popt)
-
+	#print(popt)
 	plt.figure("fit")
 	plt.plot(t1,y,'+--',markersize=10,label="temp = "+str(temp)+ "°")
 	plt.xlabel("t [s]")
@@ -103,24 +104,33 @@ for temp in degrees:
 	plt.legend()
 	#plt.savefig("fit.png",bbox_inches='tight',dpi=500)
 
+print("Fit result for k")
+print(k)
+print(dk)
+print("\n")
 
-
-
+k = -k[0:2]
+dk = dk[0:2]
+degrees = degrees[0:2] + 273.15
 plt.figure()
-#dk[2]=0.000000000000000000001
-plt.errorbar(1./degrees,k,yerr=dk/k,fmt='.')
+#dk[2]=0
+plt.errorbar(1./degrees,np.log(k),yerr=dk/k,fmt='.',label = "experimental point")
 
-popt, pcov = curve_fit(line,1./degrees,k)
+popt, pcov = curve_fit(line,1./degrees,np.log(k))
 perr = np.sqrt(np.diag(pcov))
+print("Fit for energy")
 print(popt)
 print(perr)
 
 plt.plot(1./degrees, line(1./degrees, *popt), 'r-',label='fit y = mx+q')
 plt.grid(True)
 plt.legend()
-plt.xlabel("1/T [1/°]")
-plt.ylabel("ln(k")
+plt.xlabel(r"1/T [K$^{-1}$]")
+plt.ylabel("ln(k)")
+#plt.ylim([-0.1,0.1])
 
-plt.show()
-
+print("Valori di energia e A")
+print("E = " + str(-8.314472*popt[0]) + "+/-" + str(8.314472*perr[0]))
+print("A = " + str(np.exp(popt[1]))+ "+/-" + str(np.exp(popt[1]) *perr[1] ))
 #plt.savefig("test.png",bbox_inches='tight')
+plt.show()
