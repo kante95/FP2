@@ -266,10 +266,12 @@ print(popt)
 print(perr)
 
 plt.figure()
-plt.plot(t2,v)
+plt.plot(t2,v,label="Experimental data")
 plt.plot(t2, multi_lorentz_peak(t2, *popt), 'r-',label="Multi lorentzian fit")
 
-
+plt.xlabel("Time [s]")
+plt.ylabel("Voltage [V]")
+plt.legend()
 FPRpeak1 = center1
 FPRpeak2 = popt[3]
 
@@ -284,4 +286,4 @@ FSR = t2freq(FPRpeak2-FPRpeak1)
 dFSR_REAL = FSR*np.sqrt( (ddeltaT/deltaT)**2 + (ddfrequnecy/dfrequenecy)**2 + (dFSR/(FPRpeak2-FPRpeak1))**2  )
 print(str(FSR)+"+/-" + str(dFSR_REAL))
 
-#plt.show() 
+plt.show() 
